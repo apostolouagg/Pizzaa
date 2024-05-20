@@ -2,9 +2,26 @@
     <li *ngFor="let food of foods;">
         <a routerLink="/food/{{food.id}}">
             <img [src]="food.imageUrl" [alt]="food.name">
-            <div class="name">
-                {{food.name}}
+            <div class="content">
+                <div class="label">
+                    <div class="name">
+                        {{food.name}}
+                    </div>
+                    <div class="meat" *ngIf="food.meat?'':'🥦'">
+                        <span> 🥦 </span>
+                    </div>
+                </div>
+                <span class="favorite {{food.favorite?'':'not'}}"> ❤ </span>
+                <div class="ingredients">
+                    {{food.ingredients}}
+                </div>
+                <div class="price">
+                    <span>
+                        {{food.price | currency : '€'}}
+                    </span>
+                </div>
             </div>
+            
         </a>
     </li>
 </ul>
@@ -13,9 +30,17 @@
     <li *ngFor="let drink of drinks">
         <a routerLink="/food/{{drink.id}}">
             <img [src]="drink.imageUrl" [alt]="drink.name">
-            <div class="name">
-                {{drink.name}}
+            <div class="content">
+                <div class="name">
+                    {{drink.name}}
+                </div>
+                <div class="price">
+                    <span>
+                        {{drink.price | currency : '€'}}
+                    </span>
+                </div>
             </div>
+            
         </a>
     </li>
 </ul>

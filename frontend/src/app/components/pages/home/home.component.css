@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 10rem;
+}
+
+li a{
+    height: 23rem;
+    width: 20rem;
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #e72929;
+    text-decoration: none;
+    font-family: Poppins;
+}
+
+li a:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+ 
+li a img{
+  object-fit: cover;
+  height: 14rem;
+}
+
+.content{
+  margin-top: 0.3rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  height: 9rem;
+}
+
+.favorite{
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.2rem;
+}
+
+.favorite.not{
+  color: grey;
+}
+
+.price{
+  position: absolute;
+  bottom: 0;
+  left: 0.9rem;
+  background: white;
+  padding: 0.5rem 100% 0.5rem 0;
+  color: #414141;
+  margin-top: 0.7rem;
+  font-size: 1.1rem;
+} 
+
+.ingredients{
+    color: #7e7e7e;
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.meat{
+    font-size: 1.2rem;
+    padding: 0 0.3rem;
+}

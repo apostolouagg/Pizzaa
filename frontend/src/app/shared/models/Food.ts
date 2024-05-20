@@ -4,7 +4,6 @@ export class Food{
     ingredients!: string;
     price!: number;
     favorite!: boolean;
-    stars!: number;
     imageUrl!: string;
     meat!: boolean;
 }
