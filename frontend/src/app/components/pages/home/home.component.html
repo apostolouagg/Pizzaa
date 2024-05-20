@@ -1,0 +1,21 @@
+<ul>
+    <li *ngFor="let food of foods;">
+        <a routerLink="/food/{{food.id}}">
+            <img [src]="food.imageUrl" [alt]="food.name">
+            <div class="name">
+                {{food.name}}
+            </div>
+        </a>
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor="let drink of drinks">
+        <a routerLink="/food/{{drink.id}}">
+            <img [src]="drink.imageUrl" [alt]="drink.name">
+            <div class="name">
+                {{drink.name}}
+            </div>
+        </a>
+    </li>
+</ul>
