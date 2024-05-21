@@ -1,12 +1,28 @@
 <header>
     <div class="container">
-        <a class="logo" routerLink="/">Pizza</a>
+        <div class="category">
+            <div class="menu-container">
+                <a routerLink="/dashboard">☰</a>
+                <div class="menu">
+                    <li routerLink="/deals">Deals</li>
+                    <li routerLink="/pizzas">Pizzas</li>
+                    <li routerLink="/drinks">Drinks</li>
+                </div>
+            </div>
+
+            <a class="logo" routerLink="/">Pizza</a>
+        </div>
+
+        
+
+        <app-search></app-search>
+
         <nav>
             <ul>
                 <li class="order">
                     <a routerLink="/order">Order!</a>
                 </li>
-                <li>
+                
                 <li>
                     <a routerLink="/login">Log In</a>
                 </li>

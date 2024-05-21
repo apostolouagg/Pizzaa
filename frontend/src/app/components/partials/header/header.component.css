@@ -21,17 +21,10 @@ ul a:hover{
 }
 
 .container{
-  margin: 0 auto;
+  margin: 0 ;
   display: flex;
   justify-content: space-between;
-}
-
-.logo{
-    font-family: Calistoga;
-    font-weight: normal;
-    font-size: 50px;
-    padding: 0 1rem;
-    cursor: pointer;
+  align-items: center;
 }
 
 .order{
@@ -57,25 +50,48 @@ a span{
   font-size:0.9rem;
 }
 
+.logo{
+  font-family: Calistoga;
+  font-weight: normal;
+  font-size: 50px;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
 .menu-container{
-  position: relative;
+  align-items: center;
+  margin: 0.5rem 1rem;
+  font-size: 2rem;
 }
 
 .menu{
+  font-size: 1rem;
   position: fixed;
   z-index: 1;
   background: whitesmoke;
   display: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  list-style: none;
+  padding: 0.5rem;
+  cursor: pointer;
 }
 
 .menu-container:hover .menu{
   display: block;
-  margin-right: 20px;
 }
 
-.menu a{
-  width: 80%;
-  min-width:8rem;
+.menu li{
+  width: 60%;
+  min-width:5rem;
+  padding: 0.5rem;
 }
-  
+
+.menu li:hover{
+  color: white;
+  background-color: #07b31e;
+  border-radius: 10px;
+}
+
+.category{
+  display: inline-flex;
+}

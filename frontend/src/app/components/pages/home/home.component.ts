@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { Food } from '../../../shared/models/Food';
-import { Drinks } from '../../../shared/models/Drinks';
 import { FoodService } from '../../../services/food.service';
 import { RouterModule } from '@angular/router';
 import { CurrencyPipe, NgFor, NgIf } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -13,13 +13,21 @@ import { CurrencyPipe, NgFor, NgIf } from '@angular/common';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  constructor (private foodService:FoodService) {
-    this.foods = foodService.getAllFood();
-    this.drinks = foodService.getAllDrinks();
-  }
 
   foods:Food[] = [];
-  drinks:Drinks[] = [];
+
+  constructor (private foodService:FoodService, activatedRoute:ActivatedRoute) {
+    activatedRoute.params.subscribe((params) => {
+      if(params.searchTerm){
+        this.foods = this.foodService.getAllProductsBySearchTerm(params.searchTerm);
+      }
+      else {
+        this.foods = foodService.getAllFood();
+      }
+    })
+  }
+
+
 
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.

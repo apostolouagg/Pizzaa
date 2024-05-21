@@ -1,9 +1,9 @@
 export class Food{
     id!: string;
     name!: string;
-    ingredients!: string;
+    ingredients?: string;
     price!: number;
-    favorite!: boolean;
     imageUrl!: string;
-    meat!: boolean;
+    meat?: boolean;
+    tag!: string;
 }
