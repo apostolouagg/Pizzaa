@@ -1,30 +1,19 @@
 <header>
     <div class="container">
-        <div class="category">
-            <div class="menu-container">
-                <a routerLink="/dashboard">☰</a>
-                <div class="menu">
-                    <li routerLink="/deals">Deals</li>
-                    <li routerLink="/pizzas">Pizzas</li>
-                    <li routerLink="/drinks">Drinks</li>
-                </div>
-            </div>
+        <a class="logo" routerLink="/">Pizza</a>
 
-            <a class="logo" routerLink="/">Pizza</a>
-        </div>
-
-        
+        <a class="nav" routerLink="/">Home</a>
+        <a class="nav" routerLink="/deals">Deals</a>
 
         <app-search></app-search>
 
+        <a class="nav" routerLink="/pizzas">Pizzas</a>
+        <a class="nav" routerLink="/drinks">Drinks</a>
+
         <nav>
             <ul>
-                <li class="order">
-                    <a routerLink="/order">Order!</a>
-                </li>
-                
                 <li>
-                    <a routerLink="/login">Log In</a>
+                    <a class="login" routerLink="/login">Log In</a>
                 </li>
                 <li>
                     <a routerLink="/contact">Contact</a>

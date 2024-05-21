@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { FoodService } from '../../../services/food.service';
-import { Food } from '../../../shared/models/Food';
 import { SearchComponent } from "../search/search.component";
 
 @Component({
@@ -13,10 +11,8 @@ import { SearchComponent } from "../search/search.component";
 })
 export class HeaderComponent {
 
-  foods:Food[] = [];
-  
-  constructor(private foodService:FoodService){
-    
+  constructor(){
+
   }
 
 }
