@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Food} from '../shared/models/Food';
+import { Food } from '../shared/models/Food';
 import { sample_foods } from '../../data';
 
 @Injectable({
@@ -14,9 +14,17 @@ export class FoodService {
   }
 
   getAllProductsBySearchTerm(searchTerm:string){
+    
     return this.getAllFood().filter(product => 
-      product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      product.tag.toLowerCase().includes(searchTerm.toLowerCase())
+      product.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
+
+  }
+
+  
+  getFoodById(foodid:string):Food{
+
+    return this.getAllFood().find(food => food.id == foodid) ?? new Food();
+
   }
 }

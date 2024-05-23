@@ -1,17 +1,21 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { SearchComponent } from "../search/search.component";
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-header',
     standalone: true,
     templateUrl: './header.component.html',
     styleUrl: './header.component.css',
-    imports: [RouterModule, SearchComponent]
+    imports: []
 })
 export class HeaderComponent {
 
-  constructor(){
+  constructor(private router:Router){
+  }
+
+  onSelect(navTerm:string){
+
+    this.router.navigate([navTerm]);
 
   }
 

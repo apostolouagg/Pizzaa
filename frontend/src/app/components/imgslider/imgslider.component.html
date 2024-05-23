@@ -1,0 +1,39 @@
+<div class="page">
+
+    <div class="pizza_text">
+        <p style="color: #07b31e">P</p>
+        <p style="color: #07b31e">I</p>
+        <p style="color: white">Z</p>
+        <p style="color: white">Z</p>
+        <p style="color: red">A</p>
+        <p style="color: red">A</p>
+    </div>
+
+    <div class="slider_container">
+
+        <div class="slider_item" 
+            [ngStyle]="{ 'background-image': 'url('+ images[currentSlide].url +')'}">
+
+            <div id="indicators">
+                @for(img of images; track $index){
+                    <div class="indicator" 
+                    (click)="jumpToSlide($index)"
+                    [ngClass]="{active: $index==currentSlide}"></div>
+                }
+            </div>
+
+            <button class="previousBtn" (click)="previous()">↫</button>
+            <button class="nextBtn" (click)="next()">↬</button>
+
+        </div>
+    </div>
+
+    <div class="pizza_text">
+        <p style="color: #07b31e">P</p>
+        <p style="color: #07b31e">I</p>
+        <p style="color: white">Z</p>
+        <p style="color: white">Z</p>
+        <p style="color: red">A</p>
+        <p style="color: red">A</p>
+    </div>
+</div>

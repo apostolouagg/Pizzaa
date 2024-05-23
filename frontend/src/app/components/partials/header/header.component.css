@@ -14,11 +14,18 @@ a{
 }
 
 .nav{
-  font-size: 1.2rem;
+  display: flex;
   margin-top: 0.5rem;
 }
 
-.nav:hover{
+.nav__child{
+  font-size: 1.2rem;
+  margin: 0.5rem 5rem 0 5rem;
+  padding: 0.5rem;
+}
+
+.nav__child:hover{
+  cursor: pointer;
   font-weight: 800;
   text-decoration: overline;
 }

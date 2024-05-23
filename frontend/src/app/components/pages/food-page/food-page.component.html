@@ -1,0 +1,26 @@
+<div class="page">
+  <div *ngIf="food" class="container">
+
+    <img [src]="food.imageUrl" [alt]="food.name"/>
+    
+    <div class="details">
+
+      <span class="name">
+        {{food.name}}
+      </span>
+      
+      <span class="ingredients" *ngIf="food.ingredients !== null ? ' ':'' ">
+        {{food.ingredients}}
+      </span>
+
+      <div class="price">
+        <span>
+          {{food.price | currency : '€' }}
+        </span>
+      </div>
+
+      <button (click)="addToCart()">Add To Cart</button>
+  
+    </div>
+  </div>
+</div>

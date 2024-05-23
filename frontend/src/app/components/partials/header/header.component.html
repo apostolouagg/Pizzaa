@@ -1,14 +1,16 @@
 <header>
     <div class="container">
-        <a class="logo" routerLink="/">Pizza</a>
+        <a class="logo" (click)="onSelect('/')">Pizzaa</a>
 
-        <a class="nav" routerLink="/">Home</a>
-        <a class="nav" routerLink="/deals">Deals</a>
+        <div class="nav">
+            <a class="nav__child" (click)="onSelect('/')">Home</a>
+            <a class="nav__child" (click)="onSelect('deals')">Deals</a>
 
-        <app-search></app-search>
+            <!-- <app-search></app-search> -->
 
-        <a class="nav" routerLink="/pizzas">Pizzas</a>
-        <a class="nav" routerLink="/drinks">Drinks</a>
+            <a class="nav__child" (click)="onSelect('pizzas')">Pizzas</a>
+            <a class="nav__child" (click)="onSelect('drinks')">Drinks</a>
+        </div>
 
         <nav>
             <ul>

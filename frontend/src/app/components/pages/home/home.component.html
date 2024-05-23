@@ -1,87 +1,18 @@
-<div class="page"> 
-    <div class="products">
-        <!-- DEALS -->
-        <h2>SUPER DEALS!</h2>
-        <ul>
-            <li *ngFor="let food of foods;">
-                <div *ngIf="food.tag == 'deals'?' ':''">
-                    <a routerLink="/food/{{food.id}}">
-                        <img [src]="food.imageUrl" [alt]="food.name">
-                        <div class="content">
-                            <div class="name">
-                                {{food.name}}
-                            </div>
-                            <div class="ingredients">
-                                {{food.ingredients}}
-                            </div>
-                            <div class="price">
-                                <span>
-                                    {{food.price | currency : '€'}}
-                                </span>
-                            </div>
-                        </div>
+<div class="page">
 
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </div>
+    <app-imgslider [images]="images"></app-imgslider>
 
-    <div class="products">
-        <h2>PIZZAS</h2>
-        <!-- PIZZAS -->
-        <ul>
-            <li *ngFor="let food of foods;">
-                <div *ngIf="food.tag == 'pizzas'?' ':''">
-                    <a routerLink="/food/{{food.id}}">
-                        <img [src]="food.imageUrl" [alt]="food.name">
-                        <div class="content">
-                            <div class="label">
-                                <div class="name">
-                                    {{food.name}}
-                                </div>
-                                <div class="meat" *ngIf="food.meat?'':'🥦'">
-                                    <span> 🥦 </span>
-                                </div>
-                            </div>
-                            <div class="ingredients">
-                                {{food.ingredients}}
-                            </div>
-                            <div class="price">
-                                <span>
-                                    {{food.price | currency : '€'}}
-                                </span>
-                            </div>
-                        </div>
+    <h1>All Our Products</h1>
+</div>
 
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </div>
-    
-    <div class="products">
-        <h2>DRINKS</h2>
-        <!-- DRINKS -->
-        <ul>
-            <li *ngFor="let food of foods;">
-                <div *ngIf="food.tag == 'drinks'?' ':''">
-                    <a routerLink="/food/{{food.id}}">
-                        <img [src]="food.imageUrl" [alt]="food.name">
-                        <div class="content">
-                            <div class="name">
-                                {{food.name}}
-                            </div>
-                            <div class="price">
-                                <span>
-                                    {{food.price | currency : '€'}}
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </div>
+<div> 
+    <!-- DEALS -->
+    <app-deals></app-deals>
+
+    <!-- PIZZAS -->
+    <app-pizzas></app-pizzas>
+
+    <!-- DRINKS -->
+    <app-drinks></app-drinks>
     
 </div>
