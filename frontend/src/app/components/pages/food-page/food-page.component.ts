@@ -4,6 +4,7 @@ import { ActivatedRoute, Route, Router } from '@angular/router';
 import { FoodService } from '../../../services/food.service';
 import { CurrencyPipe, NgIf } from '@angular/common';
 import { CartService } from '../../../services/cart.service';
+import { CartItem } from '../../../shared/models/CartItem';
 
 @Component({
   selector: 'app-food-page',
@@ -15,6 +16,7 @@ import { CartService } from '../../../services/cart.service';
 export class FoodPageComponent {
 
   food!: Food;
+  cart_item!: CartItem;
 
   constructor(activatedRoute:ActivatedRoute, foodService:FoodService, private cartService:CartService, private router:Router){
     activatedRoute.params.subscribe((params) => {
@@ -25,6 +27,7 @@ export class FoodPageComponent {
   }
 
   addToCart(){
+    this.cartService.changeQuantityIfExists(this.food.id);
     this.cartService.addToCart(this.food);
     this.router.navigateByUrl('/cart-page');
   }

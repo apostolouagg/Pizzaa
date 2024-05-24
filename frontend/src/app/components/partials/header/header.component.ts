@@ -1,6 +1,8 @@
 import { NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Cart } from '../../../shared/models/Cart';
+import { CartService } from '../../../services/cart.service';
 
 @Component({
     selector: 'app-header',
@@ -11,7 +13,12 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
 
-  constructor(private router:Router){
+  cart!: Cart;
+  
+  constructor(private router:Router, private cartService: CartService){
+    this.cartService.getCartObservable().subscribe((cart) => {
+      this.cart = cart;
+    });
   }
 
   onSelect(navTerm:string){

@@ -24,6 +24,10 @@
 
             <button class="previousBtn" (click)="previous()">↫</button>
             <button class="nextBtn" (click)="next()">↬</button>
+            <a  (click)="jumpToFood(''+ images[currentSlide].title +'')"
+                class="pizza_names">
+                {{''+ images[currentSlide].title +''}} <span>➭</span>
+            </a>
 
         </div>
     </div>

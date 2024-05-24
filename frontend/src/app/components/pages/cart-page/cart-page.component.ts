@@ -13,12 +13,13 @@ import { RouterLink } from '@angular/router';
   imports: [ CurrencyPipe, RouterLink, NgIf, NgFor ],
 })
 export class CartPageComponent implements OnInit {
-  cart!: Cart;
+  cart!: Cart; 
+
   constructor(private cartService: CartService) {
     this.cartService.getCartObservable().subscribe((cart) => {
       this.cart = cart;
-    })
-   }
+    });
+  }
 
   ngOnInit(): void {
   }
@@ -28,8 +29,13 @@ export class CartPageComponent implements OnInit {
   }
 
   changeQuantity(cartItem:CartItem,quantityInString:string){
+    console.log('action');
     const quantity = parseInt(quantityInString);
     this.cartService.changeQuantity(cartItem.food.id, quantity);
+  }
+
+  clearCart(){
+    this.cartService.clearCart();
   }
 
 }

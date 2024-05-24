@@ -1,0 +1,22 @@
+.page{
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 2rem 10rem;
+    font-family: Poppins, sans-serif;
+}
+
+img{
+    width: 10%;
+    height: auto;
+}
+
+.info{
+    margin: 15% auto;
+}
+
+.info p:first-of-type{
+    font-size: 1.1rem;
+    font-weight: 600;
+}

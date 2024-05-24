@@ -19,11 +19,11 @@
                 </li>
                 <li>
                     <a (click)="onSelect('cart-page')">
-                      Cart <span>3</span>
+                      Cart <span *ngIf="cart.totalCount === 0?'':' '" >{{cart.totalCount}}</span>
                     </a>
                   </li>
                 <li>
-                    <a routerLink="/contact">Contact</a>
+                    <a (click)="onSelect('contact')">Contact</a>
                 </li>
                 <!-- <li class="menu-container">
                     <a routerLink="/dashboard">John</a>
