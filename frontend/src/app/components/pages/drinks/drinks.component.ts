@@ -3,6 +3,7 @@ import { Food } from '../../../shared/models/Food';
 import { FoodService } from '../../../services/food.service';
 import { RouterModule } from '@angular/router';
 import { CurrencyPipe, NgFor, NgIf } from '@angular/common';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-drinks',
@@ -16,6 +17,11 @@ export class DrinksComponent {
   foods:Food[] = [];
 
   constructor (private foodService:FoodService) {
-    this.foods = foodService.getAllFood();
+    let foodsObservable:Observable<Food[]>;
+    foodsObservable = foodService.getAllFood();
+
+    foodsObservable.subscribe((serverFoods) => {
+      this.foods = serverFoods;
+    });
   }
 }

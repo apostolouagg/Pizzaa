@@ -3,6 +3,7 @@ import { Component, Input } from '@angular/core';
 import { Food } from '../../shared/models/Food';
 import { Router, RouterLink } from '@angular/router';
 import { FoodService } from '../../services/food.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-imgslider',
@@ -12,10 +13,15 @@ import { FoodService } from '../../services/food.service';
   styleUrl: './imgslider.component.css'
 })
 export class ImgsliderComponent {
-  food!: Food[];
+  foods!: Food[];
 
   constructor(foodService:FoodService, private router:Router){
-    this.food = foodService.getAllFood();
+    let foodsObservable:Observable<Food[]>;
+    foodsObservable = foodService.getAllFood();
+
+    foodsObservable.subscribe((serverFoods) => {
+      this.foods = serverFoods;
+    });
   }
 
   @Input() images: any[] = [];
@@ -35,7 +41,7 @@ export class ImgsliderComponent {
   }
 
   jumpToFood(title:string){
-    let item = this.food.find(x => x.name === title);
+    let item = this.foods.find(x => x.name === title);
     
     if(item){
       this.router.navigate(['/food/' + item.id]);

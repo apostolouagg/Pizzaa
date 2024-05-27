@@ -3,6 +3,7 @@ import { CurrencyPipe, NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { Food } from '../../../shared/models/Food';
 import { FoodService } from '../../../services/food.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-pizzas',
@@ -15,7 +16,12 @@ export class PizzasComponent {
   foods:Food[] = [];
 
   constructor(private foodService:FoodService){
-    this.foods = foodService.getAllFood();
+    let foodsObservable:Observable<Food[]>;
+    foodsObservable = foodService.getAllFood();
+
+    foodsObservable.subscribe((serverFoods) => {
+      this.foods = serverFoods;
+    });
   }
 
 }

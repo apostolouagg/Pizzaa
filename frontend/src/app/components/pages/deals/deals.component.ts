@@ -4,6 +4,7 @@ import { FoodService } from '../../../services/food.service';
 import { RouterModule } from '@angular/router';
 import { CurrencyPipe, NgFor, NgIf } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-deals',
@@ -17,7 +18,12 @@ export class DealsComponent {
   foods:Food[] = [];
 
   constructor (private foodService:FoodService) {
-    this.foods = foodService.getAllFood();
+    let foodsObservable:Observable<Food[]>;
+    foodsObservable = foodService.getAllFood();
+
+    foodsObservable.subscribe((serverFoods) => {
+      this.foods = serverFoods;
+    });
   }
 
 }

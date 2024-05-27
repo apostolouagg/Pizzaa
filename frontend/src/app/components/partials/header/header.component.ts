@@ -22,9 +22,7 @@ export class HeaderComponent {
   }
 
   onSelect(navTerm:string){
-
     this.router.navigate([navTerm]);
-
   }
 
 }

@@ -3,11 +3,11 @@ import { Food } from '../../../shared/models/Food';
 import { FoodService } from '../../../services/food.service';
 import { RouterModule } from '@angular/router';
 import { CurrencyPipe, NgFor, NgIf } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
 import { DealsComponent } from "../deals/deals.component";
 import { PizzasComponent } from "../pizzas/pizzas.component";
 import { DrinksComponent } from "../drinks/drinks.component";
 import { ImgsliderComponent } from "../../imgslider/imgslider.component";
+import { Observable } from 'rxjs';
 
 @Component({
     selector: 'app-home',
@@ -20,15 +20,13 @@ export class HomeComponent {
 
   foods:Food[] = [];
 
-  constructor (private foodService:FoodService, activatedRoute:ActivatedRoute) {
-    activatedRoute.params.subscribe((params) => {
-      if(params.searchTerm){
-        this.foods = this.foodService.getAllProductsBySearchTerm(params.searchTerm);
-      }
-      else {
-        this.foods = foodService.getAllFood();
-      }
-    })
+  constructor (private foodService:FoodService) {
+    let foodsObservable:Observable<Food[]>;
+    foodsObservable = foodService.getAllFood();
+
+    foodsObservable.subscribe((serverFoods) => {
+      this.foods = serverFoods;
+    });
   }
 
   ngOnInit(): void {
