@@ -25,7 +25,7 @@
                 </li>
                 <li>
                     <a (click)="onSelect('cart-page')">
-                      Cart <span *ngIf="cart.totalCount === 0?'':' '" >{{cart.totalCount}}</span>
+                      Cart <span *ngIf="!(cart.totalCount === 0)">{{cart.totalCount}}</span>
                     </a>
                   </li>
                 <li>
