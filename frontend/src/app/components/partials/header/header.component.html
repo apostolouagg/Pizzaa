@@ -14,7 +14,13 @@
 
         <nav>
             <ul>
-                <li>
+                <li class="menu-container" *ngIf="user.token">
+                    <a class="login">{{user.name}}</a>
+                    <div class="menu">
+                        <a (click)="logout()">Logout</a>
+                    </div>
+                </li>
+                <li *ngIf="!user.token">
                     <a class="login" (click)="onSelect('login-page')">Log In</a>
                 </li>
                 <li>
@@ -25,19 +31,6 @@
                 <li>
                     <a (click)="onSelect('contact')">Contact</a>
                 </li>
-                <!-- <li class="menu-container">
-                    <a routerLink="/dashboard">John</a>
-                    <div class="menu">
-                        <a routerLink="/profile">Profile</a>
-                        <a routerLink="/orders">Orders</a>
-                        <a>Log Out</a>
-                    </div>
-                </li>
-                <li>
-                    <a routerLink="/cart-page">
-                        Cart <span>3</span>
-                    </a>
-                </li> -->
             </ul>
         </nav>
     </div>

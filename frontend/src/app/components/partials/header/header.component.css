@@ -82,3 +82,22 @@ a span{
 .login{
   font-weight: 700;
 }
+
+.menu-container{
+  position: relative;
+}
+
+.menu{
+  position:absolute;
+  z-index:1;
+  background:whitesmoke;
+  display: none;
+}
+
+.menu-container:hover .menu{
+  display: block;
+}
+
+.menu a{
+  min-width:6rem;
+}
