@@ -8,13 +8,14 @@ import { PizzasComponent } from "../pizzas/pizzas.component";
 import { DrinksComponent } from "../drinks/drinks.component";
 import { ImgsliderComponent } from "../../imgslider/imgslider.component";
 import { Observable } from 'rxjs';
+import { PastaComponent } from '../pasta/pasta.component';
 
 @Component({
     selector: 'app-home',
     standalone: true,
     templateUrl: './home.component.html',
     styleUrl: './home.component.css',
-    imports: [RouterModule, NgFor, CurrencyPipe, NgIf, DealsComponent, PizzasComponent, DrinksComponent, ImgsliderComponent]
+    imports: [RouterModule, NgFor, CurrencyPipe, NgIf, DealsComponent, PizzasComponent, DrinksComponent, PastaComponent, ImgsliderComponent]
 })
 export class HomeComponent {
 
@@ -32,7 +33,6 @@ export class HomeComponent {
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-    
   }
 
 

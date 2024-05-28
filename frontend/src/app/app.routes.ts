@@ -7,11 +7,13 @@ import { FoodPageComponent } from './components/pages/food-page/food-page.compon
 import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { LoginPageComponent } from './components/pages/login-page/login-page.component';
+import { PastaComponent } from './components/pages/pasta/pasta.component';
 
 export const routes: Routes = [
     {path:'', component:HomeComponent}, //default route
     {path:'deals', component:DealsComponent},
     {path:'pizzas', component:PizzasComponent},
+    {path:'pasta', component:PastaComponent},
     {path:'drinks', component:DrinksComponent},
     {path:'food/:id', component:FoodPageComponent},
     {path:'cart-page', component:CartPageComponent},

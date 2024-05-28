@@ -4,7 +4,7 @@
         <h2>SUPER DEALS!</h2>
         <ul>
             <li *ngFor="let food of foods;">
-                <div *ngIf="food.tag == 'deals'?' ':''">
+                <div *ngIf="food.tag == 'deals'">
                     <a routerLink="/food/{{food.id}}">
                         <img [src]="food.imageUrl" [alt]="food.name">
                         <div class="content">

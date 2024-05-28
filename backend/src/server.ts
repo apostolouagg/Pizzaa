@@ -1,7 +1,13 @@
 import express from "express";
 import cors from "cors";
 import { sample_foods, sample_users } from "./data";
-import jwt from "jsonwebtoken";
+import foodRouter from '../../backend/src/routers/food.router';
+import userRouter from '../../backend/src/routers/user.router';
+import dotenv from 'dotenv';
+import { dbConnect } from "./configs/database.config";
+
+dotenv.config();
+dbConnect();
 
 const app = express();
 app.use(express.json());
@@ -13,39 +19,8 @@ app.use(cors({
     origin:["http://localhost:4200"]
 }));
 
-//APIs
-app.get("/api/foods", (req, res) => {
-    res.send(sample_foods);
-});
-
-
-//get food/:id
-app.get("/api/foods/food/:id", (req, res) => {
-    const id = req.params.id;
-    const foods = sample_foods.find(food => food.id == id);
-    res.send(foods);
-});
-
-//login
-app.post("/api/users/login", (req, res) =>{
-    const {email, password} = req.body;
-    const user = sample_users.find(user => user.email === email && user.password === password);
-
-    if(user){
-        res.send(generateTokenResponse(user));
-    }
-    else{
-        res.status(400).send("User name or password is not valid!");
-    }
-});
-
-
-const generateTokenResponse = (user:any) => {
-    const token = jwt.sign({email: user.email, isAdmin:user.isAdmin}, "sometext", {expiresIn:"30d"});
-
-    user.token = token;
-    return user;
-}
+app.use("/api/foods", foodRouter);
+app.use("/api/users", userRouter);
 
 const port = 5000;
 app.listen(port, () => {

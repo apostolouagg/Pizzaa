@@ -195,62 +195,107 @@ export const sample_foods: any[] = [
     },
     {   
         id:'23',
+        name: 'Mac And Cheese',
+        ingredients : 'Elbow macaroni with Cheddar, Gruyère and Parmesan cheese',
+        price: 6.00,
+        imageUrl: '/assets/pasta/mac_and_cheese.jpg',
+        meat: false,
+        tag: 'pasta'
+    },
+    {   
+        id:'24',
+        name: 'Bolonez',
+        ingredients : 'Spaghetti with Ground Beef, tomato paste, crushed tomatoes, red wine, onions, carrots, celery, aromatics and seasonings',
+        price: 7.00,
+        imageUrl: '/assets/pasta/bolonez.jpg',
+        meat: true,
+        tag: 'pasta'
+    },
+    {   
+        id:'25',
+        name: 'Lasagna',
+        ingredients : 'Wide, flat pasta sheets with Italian Sausage, tomato sauce, Ricotta, Mozzarella, Parmesan, herbs and spices',
+        price: 10.00,
+        imageUrl: '/assets/pasta/lasagna.jpg',
+        meat: true,
+        tag: 'pasta'
+    },
+    {   
+        id:'26',
+        name: 'Chicken Alfredo',
+        ingredients : 'Fettuccine Pasta with Boneless Chicken in a creamy sauce with Parmesan, Heavy Cream, Butter, Olive Oil, Fresh Parsley, aromatics and spices',
+        price: 9.00,
+        imageUrl: '/assets/pasta/chicken_alfredo.jpg',
+        meat: true,
+        tag: 'pasta'
+    },
+    {   
+        id:'27',
+        name: 'Carbonara',
+        ingredients : 'Traditional Carbonara with Spaghetti, Guanciale, Eggs, Pecorino Romano Cheese, Salt and Black Pepper',
+        price: 9.00,
+        imageUrl: '/assets/pasta/carbonara.jpg',
+        meat: true,
+        tag: 'pasta'
+    },
+    {   
+        id:'28',
         name: 'Sprite 330ml',
         price: 1.45,
         imageUrl: '/assets/drinks/sprite_330.jpg',
         tag: 'drinks'
     },
     {   
-        id:'24',
+        id:'29',
         name: 'Water 500ml',
         price: 0.50,
         imageUrl: '/assets/drinks/water_500.jpg',
         tag: 'drinks'
     },
     {   
-        id:'25',
+        id:'30',
         name: 'Coca-Cola Light 1,5lt',
         price: 2.40,
         imageUrl: '/assets/drinks/coke_light_15lt.jpg',
         tag: 'drinks'
     },
     {   
-        id:'26',
+        id:'31',
         name: 'Coca-Cola Light 330ml',
         price: 1.45,
         imageUrl: '/assets/drinks/coke_light_330.jpg',
         tag: 'drinks'
     },
     {   
-        id:'27',
+        id:'32',
         name: 'Coca-Cola Zero 1,5lt',
         price: 2.40,
         imageUrl: '/assets/drinks/coke_zero_15lt.jpg',
         tag: 'drinks'
     },
     {   
-        id:'28',
+        id:'33',
         name: 'Coca-Cola Zero 330ml',
         price: 1.45,
         imageUrl: '/assets/drinks/coke_zero_330.jpg',
         tag: 'drinks'
     },
     {   
-        id:'29',
+        id:'34',
         name: 'Coca-Cola 1,5lt',
         price: 2.4,
         imageUrl: '/assets/drinks/coke_15lt.jpg',
         tag: 'drinks'
     },
     {   
-        id:'30',
+        id:'35',
         name: 'Coca-Cola 330ml',
         price: 1.45,
         imageUrl: '/assets/drinks/coke_330.jpg',
         tag: 'drinks'
     },  
     {   
-        id:'31',
+        id:'36',
         name: 'Fanta 330ml',
         price: 1.45,
         imageUrl: '/assets/drinks/fanta_330.jpg',

@@ -12,7 +12,6 @@ import { ActivatedRoute, Router } from '@angular/router';
   imports: [ReactiveFormsModule, FormsModule, NgIf]
 })
 export class LoginPageComponent implements OnInit {
-  
   loginForm!:FormGroup;
   isSubmitted = false;
   returnUrl = '';

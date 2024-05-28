@@ -6,12 +6,13 @@ import { DealsComponent } from "./components/pages/deals/deals.component";
 import { PizzasComponent } from './components/pages/pizzas/pizzas.component';
 import { DrinksComponent } from './components/pages/drinks/drinks.component';
 import { ImgsliderComponent } from './components/imgslider/imgslider.component';
+import { PastaComponent } from './components/pages/pasta/pasta.component';
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, HeaderComponent, HomeComponent, DealsComponent, PizzasComponent, DrinksComponent, ImgsliderComponent]
+    imports: [RouterOutlet, HeaderComponent, HomeComponent, DealsComponent, PizzasComponent, DrinksComponent, PastaComponent, ImgsliderComponent]
 })
 export class AppComponent {
   title = 'frontend';
