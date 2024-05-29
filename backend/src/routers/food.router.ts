@@ -5,7 +5,7 @@ import { FoodModel } from '../models/food.model';
 
 const router  = Router();
 
-//foods api
+//foods
 router.get("/", asyncHandler(
     async (req, res) => {
         const foods = await FoodModel.find();
@@ -13,8 +13,7 @@ router.get("/", asyncHandler(
     }
 ));
 
-
-//get food/:id api
+//get food/:id
 router.get("/food/:id", asyncHandler(
     async (req, res) => {
         const food = await FoodModel.findById(req.params.id);

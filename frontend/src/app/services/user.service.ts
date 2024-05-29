@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, tap } from 'rxjs';
+import { BehaviorSubject, EMPTY, finalize, Observable, tap } from 'rxjs';
 import { User } from '../shared/models/User';
 import { IUserLogin } from '../shared/Interfaces/IUserLogin';
 import { HttpClient } from '@angular/common/http';
@@ -23,7 +23,14 @@ export class UserService {
     return this.userSubject.value;
   }
 
+  isRequestPending1 = false;
   login(userLogin:IUserLogin):Observable<User>{
+
+    if (this.isRequestPending1) {
+      return EMPTY;
+    }
+    this.isRequestPending1 = true;
+
     return this.http.post<User>(USER_LOGIN_URL, userLogin).pipe(
       tap({
         next: (user) => {
@@ -33,22 +40,35 @@ export class UserService {
         error: (errorResponse) => {
           alert('Wrong Email or Password!');
         }
-      })
+      }),
+
+      finalize(() => this.isRequestPending1 = false)
     );
   }
 
+  isRequestPending2 = false;
   register(userRegister:IUserRegister):Observable<User>{
+
+    if (this.isRequestPending2) {
+      return EMPTY;
+    }
+    this.isRequestPending2 = true;
+
     return this.http.post<User>(USER_REGISTER_URL, userRegister).pipe(
       tap({
         next: (user) => {
           this.setUserToLocalStorage(user);
           this.userSubject.next(user);
           alert('Registration Succeeded!');
+          return;
         },
         error: (errorResponse) => {
-          //
+          alert('User already exists. Please Log in!');
+          return;
         }
-      })
+      }),
+
+      finalize(() => this.isRequestPending2 = false)
     );
   }
 

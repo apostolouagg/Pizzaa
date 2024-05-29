@@ -9,7 +9,7 @@ export const sample_foods: any[] = [
     },
     {
         id:'2',
-        name: 'Super Deal',
+        name: 'Pizzas Everywhere',
         price: 20,
         ingredients: 'Buy 2 pizzas, get + 1 pizza for Free!',
         imageUrl: '/assets/deals/2_pizzas_plus_1_free.jpg',
@@ -25,7 +25,7 @@ export const sample_foods: any[] = [
     },
     {
         id:'4',
-        name: 'Combo Meal',
+        name: 'Classic Combo',
         price: 10,
         ingredients: '1 pizza + 1 Coca-Cola 330ml for €10.00',
         imageUrl: '/assets/deals/2_pizzas_plus_1_free.jpg',
@@ -300,6 +300,14 @@ export const sample_foods: any[] = [
         price: 1.45,
         imageUrl: '/assets/drinks/fanta_330.jpg',
         tag: 'drinks'
+    },
+    {
+        id:'37',
+        name: 'The Italian Deal',
+        price: 10,
+        ingredients: '1 pizza + 1 pasta dish + 1 Coca-Cola 330ml for €14.50',
+        imageUrl: '/assets/deals/pizza_pasta.jpg',
+        tag: 'deals'
     },
 ]
 

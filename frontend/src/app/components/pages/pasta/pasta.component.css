@@ -10,10 +10,12 @@
 
 h2{
   font-family: Poppins, sans-serif;
+  text-align: center;
 }
 
 ul{
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   list-style-type: none;

@@ -16,7 +16,7 @@ a, label{
 .navi{
   display: flex;
   justify-content: center;
-  margin: 0.5rem 0 0 15rem;
+  margin: 0.5rem 0 0 14rem;
   /* margin-top: 0.5rem; */
 }
 
@@ -95,7 +95,7 @@ a span{
 
 .menu-container{
   position: relative;
-  max-width: 202px; /* Adjust this width as needed */
+  max-width: 121px;
 }
 
 .menu{

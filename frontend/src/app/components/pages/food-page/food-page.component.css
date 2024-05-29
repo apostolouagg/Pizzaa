@@ -2,7 +2,9 @@
   display: flex;
   align-items: center;
   padding: 0;
-  margin: 3% 20%;
+  width: auto;
+  height: 100%;
+  margin: 5rem;
   font-family: Poppins, sans-serif;
 }
 
@@ -10,7 +12,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3rem;
 }
 
 .details{

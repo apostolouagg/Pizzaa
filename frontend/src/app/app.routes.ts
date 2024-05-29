@@ -10,6 +10,7 @@ import { LoginPageComponent } from './components/pages/login-page/login-page.com
 import { PastaComponent } from './components/pages/pasta/pasta.component';
 import { RegisterPageComponent } from './components/pages/register-page/register-page.component';
 import { CheckoutPageComponent } from './components/pages/checkout-page/checkout-page.component';
+import { AuthGuard } from './auth/guards/auth.guard';
 
 export const routes: Routes = [
     {path:'', component:HomeComponent}, //default route
@@ -22,5 +23,5 @@ export const routes: Routes = [
     {path:'contact', component:ContactComponent},
     {path:'login-page', component:LoginPageComponent},
     {path:'register-page', component:RegisterPageComponent},
-    {path:'checkout-page', component:CheckoutPageComponent},
+    {path:'checkout-page', component:CheckoutPageComponent, canActivate:[AuthGuard]},
 ];

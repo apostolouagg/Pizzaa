@@ -3,6 +3,7 @@ import cors from "cors";
 import { sample_foods, sample_users } from "./data";
 import foodRouter from '../../backend/src/routers/food.router';
 import userRouter from '../../backend/src/routers/user.router';
+import orderRouter from '../../backend/src/routers/order.router';
 import dotenv from 'dotenv';
 import { dbConnect } from "./configs/database.config";
 
@@ -21,6 +22,7 @@ app.use(cors({
 
 app.use("/api/foods", foodRouter);
 app.use("/api/users", userRouter);
+app.use("/api/orders", orderRouter);
 
 const port = 5000;
 app.listen(port, () => {
