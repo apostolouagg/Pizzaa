@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="details">
+        <form [formGroup]="registerForm" (ngSubmit)="submit()">
+            <!-- NAME -->
+            <div class="input-container">
+                <label>Name</label>
+                <div>
+                    <input type="text" placeholder="Example Example (must be 5+ characters)" formControlName="name" />
+                </div>
+            </div>
+            <div class="error-list" *ngIf="fc.name.errors && isSubmitted">
+                <div *ngIf="fc.name.errors.required">Should not be empty</div>
+                <div *ngIf="fc.name.errors">Field is too short</div>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="input-container">
+                <label>Email</label>
+                <div>
+                    <input type="email" placeholder="example@gmail.com" formControlName="email" />
+                </div>
+            </div>
+            <div class="error-list" *ngIf="fc.email.errors && isSubmitted">
+                <div *ngIf="fc.email.errors.required">Should not be empty</div>
+                <div *ngIf="fc.email.errors.email">Email is not correct</div>
+            </div>
+
+            <!-- PASSWORD -->
+            <div class="input-container">
+                <label>Password</label>
+                <div>
+                    <input type="password" placeholder="example1234 (must be 5+ characters)" formControlName="password" />
+                </div>
+            </div>
+            <div class="error-list" *ngIf="fc.password.errors && isSubmitted">
+                <div *ngIf="fc.password.errors.required">Should not be empty</div>
+                <div *ngIf="fc.password.errors">Field is too short</div>
+            </div>
+
+            <!-- ADDRESS -->
+            <div class="input-container">
+                <label>Address</label>
+                <div>
+                    <input type="text" placeholder="Example 01, Athens (must be 10+ characters)" formControlName="address" />
+                </div>
+            </div>
+            <div class="error-list" *ngIf="fc.address.errors && isSubmitted">
+                <div *ngIf="fc.address.errors.required">Should not be empty</div>
+                <div *ngIf="fc.address.errors">Field is too short</div>
+            </div>
+            
+            
+            <div class="button">
+                <div class="error-list" *ngIf="!(fc.name.errors && fc.email.errors && fc.password.errors && fc.address.errors) && isSubmitted">
+                    <div>This user already exists. Please Log in!</div>
+                </div>
+                <button type="submit" (click)="submit()">Register</button>
+            </div>
+
+            <div class="login">
+                Already a user? &nbsp;
+                <a routerLink="/login-page" [queryParams]="{returnUrl: returnUrl}">Log in here</a>
+            </div>
+        </form>
+    </div>
+</div>
+

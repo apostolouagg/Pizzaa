@@ -7,6 +7,7 @@ import { PizzasComponent } from './components/pages/pizzas/pizzas.component';
 import { DrinksComponent } from './components/pages/drinks/drinks.component';
 import { ImgsliderComponent } from './components/imgslider/imgslider.component';
 import { PastaComponent } from './components/pages/pasta/pasta.component';
+import { OrderItemsListComponent } from './components/partials/order-items-list/order-items-list.component';
 @Component({
     selector: 'app-root',
     standalone: true,

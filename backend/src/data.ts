@@ -35,7 +35,7 @@ export const sample_foods: any[] = [
         id:'5',
         name: 'Cheddar Melt',
         ingredients : '100% Mozzarella, tomato sauce, extra cheddar, extra bacon, extra fresh mushrooms',
-        price: 9.45,
+        price: 9.50,
         imageUrl: '/assets/pizza/cheddar_melt.jpg',
         meat: true,
         tag: 'pizzas'
@@ -44,7 +44,7 @@ export const sample_foods: any[] = [
         id:'6',
         name: 'Chili Sin Carne',
         ingredients : 'Vegetable cheese, tomato sauce, corn, onion, chili sin carne',
-        price: 9.45,
+        price: 8.50,
         imageUrl: '/assets/pizza/chili_sin_carne.jpg',
         meat: false,
         tag: 'pizzas'
@@ -53,7 +53,7 @@ export const sample_foods: any[] = [
         id:'7',
         name: 'Diavola',
         ingredients : '100% Mozzarella, tomato sauce, pepperoni, onions, jalapenos peppers',
-        price: 9.45,
+        price: 9.00,
         imageUrl: '/assets/pizza/diavola.jpg',
         meat: true,
         tag: 'pizzas'
@@ -62,7 +62,7 @@ export const sample_foods: any[] = [
         id:'8',
         name: 'Fiorentina',
         ingredients : '100% Mozzarella, tomato sauce, pepperoni, rocket, Vonitsa cream cheese, olive oil',
-        price: 9.45,
+        price: 9.50,
         imageUrl: '/assets/pizza/fiorentina.jpg',
         meat: true,
         tag: 'pizzas'
@@ -71,7 +71,7 @@ export const sample_foods: any[] = [
         id:'9',
         name: 'Flambee',
         ingredients : '100% Mozzarella, cream sauce, bacon, onions, extra bacon',
-        price: 9.45,
+        price: 8.50,
         imageUrl: '/assets/pizza/flambee.jpg',
         meat: true,
         tag: 'pizzas'
@@ -80,7 +80,7 @@ export const sample_foods: any[] = [
         id:'10',
         name: 'Garden Classic',
         ingredients : '100% Mozzarella, tomato sauce, olives, fresh green peppers, onions, mushrooms, fresh tomatoes',
-        price: 9.45,
+        price: 7.50,
         imageUrl: '/assets/pizza/garden_classic.jpg',
         meat: false,
         tag: 'pizzas'
@@ -89,7 +89,7 @@ export const sample_foods: any[] = [
         id:'11',
         name: "Mama's Pizza",
         ingredients : '100% Mozzarella, tomato sauce, cheddar cheese, bacon, Greek sausage, fresh green peppers',
-        price: 9.45,
+        price: 9.50,
         imageUrl: '/assets/pizza/mamas_pizza.jpg',
         meat: true,
         tag: 'pizzas'
@@ -98,7 +98,7 @@ export const sample_foods: any[] = [
         id:'12',
         name: 'Margarita',
         ingredients : '100% Mozzarella, tomato sauce, extra mozzarella',
-        price: 9.45,
+        price: 7.50,
         imageUrl: '/assets/pizza/margarita.jpg',
         meat: false,
         tag: 'pizzas'
@@ -107,7 +107,7 @@ export const sample_foods: any[] = [
         id:'13',
         name: 'Parmesana',
         ingredients : '100% Mozzarella, cream sauce, real Parmesan Reggiano, fresh tomato, basil',
-        price: 9.45,
+        price: 8.00,
         imageUrl: '/assets/pizza/parmesana.jpg',
         meat: false,
         tag: 'pizzas'
@@ -116,7 +116,7 @@ export const sample_foods: any[] = [
         id:'14',
         name: 'Peperoni',
         ingredients : '100% Mozzarella, tomato sauce, extra mozzarella, extra pepperoni',
-        price: 9.45,
+        price: 8.50,
         imageUrl: '/assets/pizza/peperoni.jpg',
         meat: true,
         tag: 'pizzas'
@@ -125,7 +125,7 @@ export const sample_foods: any[] = [
         id:'15',
         name: 'Pesto',
         ingredients : '100% Mozzarella, tomato sauce, pesto sauce, Parmesan, fresh tomatoes, basil',
-        price: 9.45,
+        price: 8.00,
         imageUrl: '/assets/pizza/pesto.jpg',
         meat: false,
         tag: 'pizzas'
@@ -134,7 +134,7 @@ export const sample_foods: any[] = [
         id:'16',
         name: 'Tropicana',
         ingredients : '100% Mozzarella, tomato sauce, smoked ham, pineapple',
-        price: 9.45,
+        price: 9.00,
         imageUrl: '/assets/pizza/tropicana.jpg',
         meat: true,
         tag: 'pizzas'
@@ -143,7 +143,7 @@ export const sample_foods: any[] = [
         id:'17',
         name: 'Veggeroni',
         ingredients : 'Vegetable cheese, tomato sauce, plant based vegeroni',
-        price: 9.45,
+        price: 10.00,
         imageUrl: '/assets/pizza/veggeroni.jpg',
         meat: false,
         tag: 'pizzas'
@@ -152,7 +152,7 @@ export const sample_foods: any[] = [
         id:'18',
         name: 'Veggie',
         ingredients : 'Vegetable cheese, tomato sauce, olives, fresh green peppers, onions, fresh mushrooms, fresh tomatoes',
-        price: 9.45,
+        price: 8.00,
         imageUrl: '/assets/pizza/veggie.jpg',
         meat: false,
         tag: 'pizzas'
@@ -161,7 +161,7 @@ export const sample_foods: any[] = [
         id:'19',
         name: '4 Cheese',
         ingredients : '100% Mozzarella, tomato sauce, cheddar, Parmesan Reggiano  & Grana Padano mix and Vonitsa cream cheese',
-        price: 9.45,
+        price: 9.00,
         imageUrl: '/assets/pizza/4_cheese.jpg',
         meat: false,
         tag: 'pizzas'
@@ -170,7 +170,7 @@ export const sample_foods: any[] = [
         id:'20',
         name: 'American Classic',
         ingredients : '100% Mozzarella, tomato sauce, pepperoni, spicy beef, fresh mushrooms',
-        price: 9.45,
+        price: 9.50,
         imageUrl: '/assets/pizza/american_classic.jpg',
         meat: true,
         tag: 'pizzas'
@@ -179,7 +179,7 @@ export const sample_foods: any[] = [
         id:'21',
         name: 'Barbecue Chicken',
         ingredients : '100% Mozzarella, barbecue sauce, tender chicken breast, bacon',
-        price: 9.45,
+        price: 9.50,
         imageUrl: '/assets/pizza/barbecue_chicken.jpg',
         meat: true,
         tag: 'pizzas'
@@ -188,7 +188,7 @@ export const sample_foods: any[] = [
         id:'22',
         name: 'Bourbon',
         ingredients : '100% Mozzarella, tomato sauce, tender chicken breast, bacon, onions, alcohol free Bourbon sauce drizzle',
-        price: 9.45,
+        price: 10.00,
         imageUrl: '/assets/pizza/bourbon.jpg',
         meat: true,
         tag: 'pizzas'
@@ -305,17 +305,24 @@ export const sample_foods: any[] = [
 
 export const sample_users: any[] = [
     {
-        name: "John Doe",
-        email: "john@gmail.com",
+        name: "Stratos Ainigma",
+        email: "stratos@gmail.com",
         password: "12345",
-        address: "Toronto On",
+        address: "Michail Koraka 43, Athens",
         isAdmin: true,
     },
     {
-        name: "Jane Doe",
-        email: "jane@gmail.com",
+        name: "Kiki Giannoulaki",
+        email: "kiki@gmail.com",
         password: "12345",
-        address: "Shanghai",
+        address: "Leof. El. Venizelou 130, Kallithea",
+        isAdmin: false,
+    },
+    {
+        name: "Antonia Giannoulaki",
+        email: "antonia@gmail.com",
+        password: "12345",
+        address: "Neorion 66, Piraeus",
         isAdmin: false,
     }
 ]

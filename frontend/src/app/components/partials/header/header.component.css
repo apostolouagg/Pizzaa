@@ -8,29 +8,31 @@ header{
   padding: 0;
 }
 
-a{
+a, label{
   color: #07b31e;
   text-decoration: none;
 }
 
-.nav{
+.navi{
   display: flex;
-  margin-top: 0.5rem;
+  justify-content: center;
+  margin: 0.5rem 0 0 15rem;
+  /* margin-top: 0.5rem; */
 }
 
-.nav__child{
+.navi__child{
   font-size: 1.2rem;
-  margin: 0.5rem 5rem 0 5rem;
+  margin: 0.5rem 2rem 0 2rem;
   padding: 0.5rem;
 }
 
-.nav__child:hover{
+.navi__child:hover{
   cursor: pointer;
   font-weight: 800;
   text-decoration: overline;
 }
 
-ul a:hover{
+ul a:hover, label:hover{
   background:#07b31e;
   color: white;
   cursor: pointer;
@@ -50,7 +52,7 @@ ul{
   margin: 0;
 }
 
-ul a{
+ul a, label{
   padding: 1rem;
   display: inline-block;
 }
@@ -79,12 +81,21 @@ a span{
   display: inline-flex;
 }
 
-.login{
+.login, .username{
   font-weight: 700;
+}
+
+.username{
+  display: block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu-container{
   position: relative;
+  max-width: 202px; /* Adjust this width as needed */
 }
 
 .menu{
@@ -92,6 +103,7 @@ a span{
   z-index:1;
   background:whitesmoke;
   display: none;
+  border-radius: 5px;
 }
 
 .menu-container:hover .menu{

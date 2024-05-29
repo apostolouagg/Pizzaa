@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="content">
+        <form [formGroup]="checkoutForm">
+            <div class="form_children">
+                <div class="input-container">
+                    <label>Order Name</label>
+                    <input type="text" [value]="[fc.name]" placeholder="Example Example (must be 5+ characters)" formControlName="name">
+                    <div class="error-list" *ngIf="fc.name.errors && isSubmitted">
+                        <div *ngIf="fc.name.errors.required">Should not be empty</div>
+                        <div *ngIf="fc.name.errors">Field is too short</div>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label>Order Address</label>
+                    <input type="text" [value]="[fc.address]" placeholder="Example 01, Athens (must be 10+ characters)" formControlName="address">
+                    <div class="error-list" *ngIf="fc.address.errors && isSubmitted">
+                        <div *ngIf="fc.address.errors.required">Should not be empty</div>
+                        <div *ngIf="fc.address.errors">Field is too short</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_children">
+                <app-order-items-list [order]="order"></app-order-items-list>
+            </div>
+            
+        </form>
+        <div class="button">
+            <button (click)="createOrder()">
+              Go To Payment
+            </button>
+        </div>
+    </div>
+  </div>

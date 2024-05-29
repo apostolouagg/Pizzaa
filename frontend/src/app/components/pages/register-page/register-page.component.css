@@ -1,6 +1,6 @@
 .container{
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .details{
@@ -19,7 +19,7 @@ form{
 }
 
 .input-container{
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 input{
@@ -48,6 +48,7 @@ button{
   width: 5rem;
   font-size: 1rem;
   font-family: Poppins, sans-serif;
+  margin-top: 0.5rem;
 }
 
 button:hover{
@@ -55,7 +56,8 @@ button:hover{
   cursor: pointer;
 }
 
-.register{
-  margin-top: 2rem;
-  text-align: center;
+.login{
+    margin-top: 2rem;
+    text-align: center;
 }
+  

@@ -2,18 +2,18 @@
     <div class="container">
         <a class="logo" (click)="onSelect('/')">Pizzaa</a>
 
-        <div class="nav">
-            <a class="nav__child" (click)="onSelect('/')">Home</a>
-            <a class="nav__child" (click)="onSelect('deals')">Deals</a>
-            <a class="nav__child" (click)="onSelect('pasta')">Pasta</a>
-            <a class="nav__child" (click)="onSelect('pizzas')">Pizzas</a>
-            <a class="nav__child" (click)="onSelect('drinks')">Drinks</a>
+        <div class="navi">
+            <a class="navi__child" (click)="onSelect('/')">Home</a>
+            <a class="navi__child" (click)="onSelect('deals')">Deals</a>
+            <a class="navi__child" (click)="onSelect('pasta')">Pasta</a>
+            <a class="navi__child" (click)="onSelect('pizzas')">Pizzas</a>
+            <a class="navi__child" (click)="onSelect('drinks')">Drinks</a>
         </div>
 
         <nav>
             <ul>
                 <li class="menu-container" *ngIf="user.token">
-                    <a class="login">{{user.name}}</a>
+                    <label class="username">{{user.name}}</label>
                     <div class="menu">
                         <a (click)="logout()">Logout</a>
                     </div>

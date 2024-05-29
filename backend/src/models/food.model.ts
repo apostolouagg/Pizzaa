@@ -1,4 +1,4 @@
-import { Schema } from 'mongoose';
+import { Schema, model } from 'mongoose';
 
 export interface Food{
     id: string;
@@ -18,5 +18,16 @@ export const FoodSchema = new Schema<Food>(
         imageUrl: {type: String, required: true},
         meat: {type: Boolean, default: true},
         tag: {type: String}
+    },
+    {
+        toJSON:{
+            virtuals:true
+        },
+        toObject:{
+            virtuals:true
+        },
+        timestamps: true
     }
-)
+);
+
+export const FoodModel = model<Food>('food', FoodSchema);

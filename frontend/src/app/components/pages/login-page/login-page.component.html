@@ -25,6 +25,11 @@
             <div class="button">
                 <button type="submit" (click)="submit()">Login</button>
             </div>
+
+            <div class="register">
+                New user? &nbsp;
+                <a routerLink="/register-page" [queryParams]="{returnUrl: returnUrl}">Register here</a>
+            </div>
         </form>
     </div>
 </div>

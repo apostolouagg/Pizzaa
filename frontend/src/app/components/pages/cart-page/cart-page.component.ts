@@ -10,7 +10,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   templateUrl: './cart-page.component.html',
   styleUrls: ['./cart-page.component.css'],
-  imports: [ CurrencyPipe, RouterLink, NgIf, NgFor ],
+  imports: [ CurrencyPipe, RouterLink, NgIf, NgFor],
 })
 export class CartPageComponent implements OnInit {
   cart!: Cart; 
