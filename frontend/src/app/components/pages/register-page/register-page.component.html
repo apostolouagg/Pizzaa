@@ -54,6 +54,7 @@
                 <div class="error-list" *ngIf="!(fc.name.errors && fc.email.errors && fc.password.errors && fc.address.errors) && isSubmitted">
                     <div>This user already exists. Please Log in!</div>
                 </div>
+                
                 <button type="submit" (click)="submit()">Register</button>
             </div>
 
