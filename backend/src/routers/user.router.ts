@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import jwt from "jsonwebtoken";
+import jwt from 'jsonwebtoken';
 import asyncHandler from 'express-async-handler';
 import { User, UserModel } from '../models/user.model';
 import { HTTP_BAD_REQUEST } from '../constants/http_status';
@@ -24,6 +24,11 @@ router.post("/login", asyncHandler(
 ));
 
 const generateTokenResponse = (user : User) => {
+
+    if (!process.env.JWT_SECRET) {
+        throw new Error("JWT_SECRET is not defined");
+    }
+    
     const token = jwt.sign({id: user.id, email: user.email}, process.env.JWT_SECRET!, {expiresIn:"30d"});
 
     return {

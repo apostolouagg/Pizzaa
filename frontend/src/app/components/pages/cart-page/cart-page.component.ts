@@ -16,8 +16,9 @@ export class CartPageComponent implements OnInit {
   cart!: Cart; 
 
   constructor(private cartService: CartService) {
-    this.cartService.getCartObservable().subscribe((cart) => {
-      this.cart = cart;
+    this.cartService.getCartObservable().subscribe(
+      (cart) => {
+        this.cart = cart;
     });
   }
 
@@ -29,7 +30,6 @@ export class CartPageComponent implements OnInit {
   }
 
   changeQuantity(cartItem:CartItem,quantityInString:string){
-    console.log('action');
     const quantity = parseInt(quantityInString);
     this.cartService.changeQuantity(cartItem.food.id, quantity);
   }

@@ -48,7 +48,7 @@ export class CheckoutPageComponent {
 
     this.order.name = this.fc.name.value;
     this.order.address = this.fc.address.value;
-
+    //DEN YPARXEI TOKEN STO CREATE (order.service.ts)
     console.log(this.order);
     this.orderService.create(this.order).subscribe(
       {
