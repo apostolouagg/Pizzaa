@@ -14,6 +14,7 @@ const USER_KEY = 'User';
 export class UserService {
   private userSubject = new BehaviorSubject<User>(this.getUserFromLocalStorage());
   public userObservable:Observable<User>;
+  isRequestPending = false;
 
   constructor(private http:HttpClient) {
     this.userObservable = this.userSubject.asObservable();
@@ -23,13 +24,11 @@ export class UserService {
     return this.userSubject.value;
   }
 
-  isRequestPending1 = false;
   login(userLogin:IUserLogin):Observable<User>{
-
-    if (this.isRequestPending1) {
+    if (this.isRequestPending) {
       return EMPTY;
     }
-    this.isRequestPending1 = true;
+    this.isRequestPending = true;
 
     return this.http.post<User>(USER_LOGIN_URL, userLogin).pipe(
       tap({
@@ -42,17 +41,16 @@ export class UserService {
         }
       }),
 
-      finalize(() => this.isRequestPending1 = false)
+      finalize(() => this.isRequestPending = false)
     );
   }
 
-  isRequestPending2 = false;
   register(userRegister:IUserRegister):Observable<User>{
 
-    if (this.isRequestPending2) {
+    if (this.isRequestPending) {
       return EMPTY;
     }
-    this.isRequestPending2 = true;
+    this.isRequestPending = true;
 
     return this.http.post<User>(USER_REGISTER_URL, userRegister).pipe(
       tap({
@@ -68,7 +66,7 @@ export class UserService {
         }
       }),
 
-      finalize(() => this.isRequestPending2 = false)
+      finalize(() => this.isRequestPending = false)
     );
   }
 
@@ -92,6 +90,5 @@ export class UserService {
       return new User();
     }
   }
-
   
 }

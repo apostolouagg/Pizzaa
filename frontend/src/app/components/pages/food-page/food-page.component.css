@@ -1,9 +1,8 @@
 .page{
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 0;
-  width: auto;
-  height: 100%;
   margin: 5rem;
   font-family: Poppins, sans-serif;
 }

@@ -4,9 +4,13 @@ table{
     padding: 0.5rem;
 }
 
+h2{
+    float: left;
+}
+
 h3{
     margin-top: 0.5rem;
-    color: grey;
+    color: rgb(150, 150, 150);
 }
 
 a:hover{
@@ -30,4 +34,22 @@ a{
 
 .total{
     font-size: 0.9rem;
+}
+
+.radiobuttons{
+    padding: 0.4rem 0;
+    font-size: 1rem;
+}
+
+label{
+    color: rgb(50, 50, 50);
+}
+
+input:hover, label:hover{
+    cursor: pointer;
+}
+
+.payment{
+    float: right;
+    margin-top: 0.9rem;
 }

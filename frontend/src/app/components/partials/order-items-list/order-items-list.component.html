@@ -31,6 +31,18 @@
     <tr class="total">
         <td colspan="6">
             <h2>Total: &nbsp; {{order.totalPrice | currency: '€'}}</h2>
+
+            <div class="payment">
+                <h3>Choose Payment Method:</h3>
+                <div class="radiobuttons">
+                    <input id="cash" type="radio" value="Cash" name="pay">
+                    <label for="cash">Cash</label>
+                </div>
+                <div class="radiobuttons">
+                    <input id="card" type="radio" value="Card" name="pay">
+                    <label for="card">Card (Delivery will bring POS)</label>
+                </div>
+            </div>
         </td>
     </tr>
 </table>

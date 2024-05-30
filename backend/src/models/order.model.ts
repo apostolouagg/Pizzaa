@@ -22,7 +22,7 @@ export interface Order{
     totalPrice: number;
     name: string;
     address: string;
-    paymentId: string;
+    payment: string;
     status: OrderStatus;
     user: Types.ObjectId;
     createdAt: Date;
@@ -33,7 +33,7 @@ export const OrderSchema = new Schema<Order>(
     {
         name: {type: String, required:true},
         address: {type: String, required:true},
-        paymentId: {type: String},
+        payment: {type: String, required:true},
         totalPrice: {type:Number, required:true},
         items: {type: [OrderItemSchema], required:true},
         status: {type: String, default: OrderStatus.NEW},
