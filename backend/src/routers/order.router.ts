@@ -7,6 +7,60 @@ import authMid from '../middlewares/auth.mid';
 const router = Router();
 router.use(authMid);
 
+
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     Order:
+ *       type: object
+ *       properties:
+ *         id:
+ *           type: string
+ *         items:
+ *           type: array
+ *           items:
+ *             $ref: '#/components/schemas/OrderItem'
+ *         totalPrice:
+ *           type: number
+ *         name:
+ *           type: string
+ *         address:
+ *           type: string
+ *         paymentId:
+ *           type: string
+ *         user:
+ *           type: string
+ */
+
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     OrderItem:
+ *       type: object
+ *       properties:
+ *         food:
+ *           $ref: '#/components/schemas/Food'
+ *         price:
+ *           type: number
+ *         quantity:
+ *           type: number
+ */
+
+/**
+ * @swagger
+ * /orders/create:
+ *   post:
+ *     summary: Create a new order
+ *     responses:
+ *       200:
+ *         description: Success
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Order'
+ */
 //create api
 router.post('/create', asyncHandler(
     async (req:any, res:any) => {
@@ -24,6 +78,21 @@ router.post('/create', asyncHandler(
 ));
 
 
+/**
+ * @swagger
+ * /orders/all:
+ *   get:
+ *     summary: Get all orders for user
+ *     responses:
+ *       200:
+ *         description: Success
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 $ref: '#/components/schemas/Order'
+ */
 // get all orders for user
 router.get('/all', asyncHandler(
     async (req: any, res: any) => {
@@ -32,6 +101,26 @@ router.get('/all', asyncHandler(
     }
 ));
 
+
+/**
+ * @swagger
+ * /orders/{id}:
+ *   get:
+ *     summary: Get an order by ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: string
+ *         required: true
+ *     responses:
+ *       200:
+ *         description: Success
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/Order'
+ */
 //get orders/:id
 router.get("/orders/:id", asyncHandler(
     async (req, res) => {

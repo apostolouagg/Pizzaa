@@ -5,6 +5,8 @@ import userRouter from '../../backend/src/routers/user.router';
 import orderRouter from '../../backend/src/routers/order.router';
 import dotenv from 'dotenv';
 import { dbConnect } from "./configs/database.config";
+import swaggerUi from 'swagger-ui-express';
+import YAML from 'yamljs';
 
 dotenv.config();
 dbConnect();
@@ -23,7 +25,13 @@ app.use("/api/foods", foodRouter);
 app.use("/api/users", userRouter);
 app.use("/api/orders", orderRouter);
 
+const swaggerDocument = YAML.load('./swagger.yaml');
+
+// Serve Swagger UI
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 const port = 5000;
 app.listen(port, () => {
     console.log("Website served on http://localhost:" + port);
+    console.log("Swagger Documentation on http://localhost:" + port + "/api-docs");
 });

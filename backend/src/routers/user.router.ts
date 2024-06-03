@@ -7,6 +7,39 @@ import bcrypt from 'bcryptjs';
 
 const router  = Router();
 
+
+/**
+ * @swagger
+ * components:
+ *   schemas:
+ *     User:
+ *       type: object
+ *       properties:
+ *         id:
+ *           type: string
+ *         email:
+ *           type: string
+ *         password:
+ *           type: string
+ *         name:
+ *           type: string
+ *         address:
+ *           type: string
+ */
+
+/**
+ * @swagger
+ * /users/login:
+ *   post:
+ *     summary: Login a user
+ *     responses:
+ *       200:
+ *         description: Success
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/User'
+ */
 //login api
 router.post("/login", asyncHandler(
     async (req, res) =>{
@@ -40,6 +73,20 @@ const generateTokenResponse = (user : User) => {
     };
 }
 
+
+/**
+ * @swagger
+ * /users/register:
+ *   post:
+ *     summary: Register a new user
+ *     responses:
+ *       200:
+ *         description: Success
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/User'
+ */
 //register api
 router.post('/register', asyncHandler(
     async (req, res) => {
