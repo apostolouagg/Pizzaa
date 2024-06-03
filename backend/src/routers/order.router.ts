@@ -24,7 +24,7 @@ router.post('/create', asyncHandler(
 ));
 
 
-// Get all orders for the authenticated user
+// get all orders for user
 router.get('/all', asyncHandler(
     async (req: any, res: any) => {
         const orders = await OrderModel.find({ user: req.user.id });
