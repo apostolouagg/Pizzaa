@@ -11,6 +11,14 @@ a{
     text-decoration: none;
 }
 
+.foodname{
+    transition: font-size 0.2s ease-in-out;
+}
+
+.foodname:hover{
+    font-size: 1.1rem;
+}
+
 ul{
     display: flex;
     flex-direction: column;
@@ -121,6 +129,11 @@ li .remove-button:hover{
     text-align: center;
     opacity: 0.7;
     justify-self: center;
+    transition: font-size 0.1s ease-in-out;
+}
+
+.checkout a:active{
+    font-size: 0.93rem;
 }
 
 .checkout a:hover{
@@ -156,4 +169,12 @@ li .remove-button:hover{
 .clear-button:hover{
     opacity: 1;
     cursor: pointer;
+}
+
+.remove-button, .clear-button{
+    transition: font-size 0.1s ease-in-out;
+}
+
+.remove-button:active, .clear-button:active{
+    font-size: 0.73rem;
 }

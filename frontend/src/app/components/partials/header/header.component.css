@@ -17,19 +17,30 @@ a, label{
   display: flex;
   justify-content: center;
   margin: 0.5rem 0 0 14rem;
-  /* margin-top: 0.5rem; */
 }
 
 .navi__child{
   font-size: 1.2rem;
   margin: 0.5rem 2rem 0 2rem;
   padding: 0.5rem;
+  transition: font-size 0.1s ease-in-out;
 }
 
 .navi__child:hover{
   cursor: pointer;
   font-weight: 800;
+  font-size: 1.3rem;
   text-decoration: overline;
+}
+
+ul a, label{
+  padding: 1rem;
+  display: inline-block;
+  transition: font-size 0.1s ease-in-out;
+}
+
+ul a:active, label:active{
+  font-size: 0.93rem;
 }
 
 ul a:hover, label:hover{
@@ -52,11 +63,6 @@ ul{
   margin: 0;
 }
 
-ul a, label{
-  padding: 1rem;
-  display: inline-block;
-}
-
 ul li{
   margin-top: 0.5rem;
 }
@@ -74,7 +80,15 @@ a span{
   font-weight: normal;
   font-size: 50px;
   padding: 0 1rem;
+  transition: font-size 0.1s ease-in-out;
+}
+
+.logo:hover{
   cursor: pointer;
+}
+
+.logo:active{
+  font-size: 3rem;
 }
 
 .category{

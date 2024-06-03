@@ -36,8 +36,8 @@ a{
 }
 
 .details{
-    margin: 0 4rem 4rem 4rem;
-    padding: 0 2rem 2rem 2rem;
+    margin: 0.5rem 4rem 4rem 4rem;
+    padding: 0.5rem 2rem 2rem 2rem;
     border-radius: 2rem;
 }
 
@@ -53,6 +53,11 @@ a{
     font-family: Poppins, sans-serif;
     font-size: 0.9rem;
     border-radius: 0.8rem;
+    transition: font-size 0.1s ease-in-out;
+}
+
+.reorder:active{
+    font-size: 0.81rem;
 }
 
 .reorder:hover{

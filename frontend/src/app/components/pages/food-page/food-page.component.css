@@ -60,6 +60,11 @@ button{
   padding: 1rem;
   border-radius: 10rem;
   outline: none;
+  transition: font-size 0.1s ease-in-out;
+}
+
+button:active{
+  font-size: 1.1rem;
 }
 
 button:hover{
