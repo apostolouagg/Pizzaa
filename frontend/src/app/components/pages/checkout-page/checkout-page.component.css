@@ -1,5 +1,4 @@
 .container{
-  margin-top: 1rem;
   display: flex;
   justify-content: center;
   font-family: Poppins, sans-serif;
@@ -25,7 +24,7 @@ button{
   border: none;
   font-size: 1.1rem;
   width: 20rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 button:hover{
@@ -57,9 +56,41 @@ input{
   margin-right: 10rem;
 }
 
-form, input{
+.form_top, input{
   display: flex; 
 	justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.form_bottom{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset{
+  border: 1px solid #07b31e;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.radio{
+  display: flex;
+  flex-direction: row;
+}
+
+.radio input{
+  width: 5%;
+  margin-bottom: 4px;
+}
+
+.radio label{
+  width: 100%;
+  padding: 12px;
+}
+
+input:hover, label:hover{
+  cursor: pointer;
 }

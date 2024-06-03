@@ -1,0 +1,33 @@
+<div class="page">
+    <div *ngIf="orders.length > 0; else noOrders">
+
+        <h1>My Orders</h1>
+
+        <ul class="container">
+            <li class="details" *ngFor="let order of orders">
+                <h2>Order:&nbsp;&nbsp; #{{ order.id }}</h2>
+                <p><strong>Name:</strong> &nbsp; {{ order.name }}</p>
+                <p><strong>Address:</strong> &nbsp; {{ order.address }}</p>
+                <p><strong>Total Price:</strong> &nbsp; {{ order.totalPrice | currency }}</p>
+                <p><strong>Payment:</strong> &nbsp; {{order.paymentId}} </p>
+                <p><strong>Date:</strong> &nbsp; {{ order.createdAt | date:'medium' }}</p>
+    
+                <h3>Items:</h3>
+                <ul>
+                    <li *ngFor="let item of order.items">
+                        <a routerLink="/food/{{item.food.id}}">{{ item.food.name }} </a>
+                        
+                        &nbsp;&nbsp;&nbsp;&nbsp; 
+
+                        {{ item.quantity }} &nbsp; x &nbsp; {{ item.price | currency }}
+                    </li>
+                </ul>
+
+                <button class="reorder" (click)="reorder(order.id)">Order again</button>
+            </li>
+        </ul>
+    </div>
+    <ng-template #noOrders>
+        <p class="no_orders">No orders found.</p>
+    </ng-template>
+</div>

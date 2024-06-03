@@ -1,32 +1,56 @@
 <div class="container">
     <div class="content">
-        <form [formGroup]="checkoutForm">
-            <div class="form_children">
-                <div class="input-container">
-                    <label>Order Name</label>
-                    <input type="text" [value]="[fc.name]" placeholder="Example Example (must be 5+ characters)" formControlName="name">
-                    <div class="error-list" *ngIf="fc.name.errors && isSubmitted">
-                        <div *ngIf="fc.name.errors.required">Should not be empty</div>
-                        <div *ngIf="fc.name.errors">Field is too short</div>
+        <form [formGroup]="checkoutForm" (ngSubmit)="createOrder()">
+            <div class="form_top">
+                <div class="form_children">
+                    <div class="input-container">
+                        <label>Order Name</label>
+                        <input type="text" [value]="[fc.name]" placeholder="Example Example (must be 5+ characters)" formControlName="name">
+                        <div class="error-list" *ngIf="fc.name.errors && isSubmitted">
+                            <div *ngIf="fc.name.errors.required">Should not be empty</div>
+                            <div *ngIf="fc.name.errors">Field is too short</div>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label>Order Address</label>
+                        <input type="text" [value]="[fc.address]" placeholder="Example 01, Athens (must be 10+ characters)" formControlName="address">
+                        <div class="error-list" *ngIf="fc.address.errors && isSubmitted">
+                            <div *ngIf="fc.address.errors.required">Should not be empty</div>
+                            <div *ngIf="fc.address.errors">Field is too short</div>
+                        </div>
                     </div>
                 </div>
-                <div class="input-container">
-                    <label>Order Address</label>
-                    <input type="text" [value]="[fc.address]" placeholder="Example 01, Athens (must be 10+ characters)" formControlName="address">
-                    <div class="error-list" *ngIf="fc.address.errors && isSubmitted">
-                        <div *ngIf="fc.address.errors.required">Should not be empty</div>
-                        <div *ngIf="fc.address.errors">Field is too short</div>
-                    </div>
+    
+                <div class="form_children">
+                    <app-order-items-list [order]="order"></app-order-items-list>
                 </div>
-            </div>
-
-            <div class="form_children">
-                <app-order-items-list [order]="order"></app-order-items-list>
             </div>
             
+
+            <div class="form_bottom">
+                <fieldset>
+                    <legend>Choose Payment Method:</legend>
+
+                    <div class="radio">
+                        <input type="radio" id="cash" value="cash" formControlName="payment">
+                        <label for="cash">Cash</label>
+                    </div>
+                    
+                    <div class="radio">
+                        <input type="radio" id="card" value="card" formControlName="payment">
+                        <label for="card">Card (Delivery will provide POS)</label>
+                    </div>
+
+                    <div class="error-list" style="margin-top: 5px;" *ngIf="fc.payment.errors && isSubmitted">
+                        <div *ngIf="fc.payment.errors.required">Select payment method!</div>
+                    </div>
+                </fieldset>
+            </div>
         </form>
+
         <div class="button">
             <button (click)="createOrder()">Complete Order</button>
         </div>
+
     </div>
   </div>

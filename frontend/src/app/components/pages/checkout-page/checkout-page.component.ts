@@ -17,24 +17,31 @@ import { OrderService } from '../../../services/order.service';
 })
 export class CheckoutPageComponent {
   
-  order:Order = new Order();
+  order = new Order();
+  private orders: Order[] = [];
   checkoutForm!:FormGroup;
   returnUrl = '';
   isSubmitted = false;
 
-  constructor(cartService:CartService, private formbuilder:FormBuilder, private userService:UserService, private orderService:OrderService, private activatedRoute:ActivatedRoute, private router:Router) {
+  constructor(private cartService:CartService, private formbuilder:FormBuilder, private userService:UserService, private orderService:OrderService, private activatedRoute:ActivatedRoute, private router:Router) {
     const cart = cartService.getCart();
     this.order.items = cart.items;
     this.order.totalPrice = cart.totalPrice;
   }
 
   ngOnInit(): void {
-    let { name, address } =  this.userService.currentUser;
+    //user info
+    let { id, name, address } =  this.userService.currentUser;
 
+    //user info
     this.checkoutForm = this.formbuilder.group({
+      id:[id, Validators.required],
       name:[name, [Validators.required, Validators.minLength(5)]],
-      address:[address, [Validators.required, Validators.minLength(10)]]
+      address:[address, [Validators.required, Validators.minLength(10)]],
+      payment:['', Validators.required]
     });
+
+    this.returnUrl= this.activatedRoute.snapshot.queryParams.returnUrl;
   }
 
   get fc(){
@@ -42,23 +49,24 @@ export class CheckoutPageComponent {
   }
 
   createOrder(){
+    this.isSubmitted = true;
     if(this.checkoutForm.invalid){
       return;
     }
 
     this.order.name = this.fc.name.value;
     this.order.address = this.fc.address.value;
-    //DEN YPARXEI TOKEN STO CREATE (order.service.ts)
-    console.log(this.order);
+    this.order.paymentId = this.fc.payment.value;
+
     this.orderService.create(this.order).subscribe(
       {
         next:() => {
-          alert('den etuxe, petuxe');
-          //this.router.navigateByUrl('/payment');
+          alert('Your order is confirmed! Thank you!');
+          this.cartService.clearCart();
+          this.router.navigateByUrl(this.returnUrl);
         },
         error:(errorResponse) => {
-          alert('lalal');
-          
+          alert('Order Failed!');
         }
       }
     );

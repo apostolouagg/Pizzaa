@@ -47,9 +47,11 @@ export class RegisterPageComponent {
       address: fv.address
     };
 
-    this.userService.register(user).subscribe(_ => {
-      this.router.navigateByUrl(this.returnUrl);
-    });
+    this.userService.register(user).subscribe(_ => 
+      {
+        this.router.navigateByUrl(this.returnUrl);
+      }
+    );
 
   }
 }

@@ -1,6 +1,5 @@
 import { model, Schema, Types } from 'mongoose';
 import { Food, FoodSchema } from './food.model';
-import { OrderStatus } from '../constants/order_status';
 
 export interface OrderItem{
     food: Food;
@@ -17,13 +16,12 @@ export const OrderItemSchema = new Schema<OrderItem>(
 );
 
 export interface Order{
-    id:number;
+    id:string;
     items: OrderItem[];
     totalPrice: number;
     name: string;
     address: string;
-    payment: string;
-    status: OrderStatus;
+    paymentId: string;
     user: Types.ObjectId;
     createdAt: Date;
     updatedAt: Date;
@@ -33,10 +31,9 @@ export const OrderSchema = new Schema<Order>(
     {
         name: {type: String, required:true},
         address: {type: String, required:true},
-        payment: {type: String, required:true},
+        paymentId: {type: String, required:true},
         totalPrice: {type:Number, required:true},
         items: {type: [OrderItemSchema], required:true},
-        status: {type: String, default: OrderStatus.NEW},
         user: {type: Schema.Types.ObjectId, required:true}
     },
     {

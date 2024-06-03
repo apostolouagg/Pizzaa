@@ -10,4 +10,6 @@ export const USER_LOGIN_URL = BASE_URL + '/api/users/login';
 export const USER_REGISTER_URL = BASE_URL + '/api/users/register';
 
 export const ORDERS_URL = BASE_URL + '/api/orders';
+export const ALL_ORDERS_URL = ORDERS_URL + '/all';
 export const ORDER_CREATE_URL = ORDERS_URL + '/create';
+export const ORDER_BY_ID_URL = ORDERS_URL + '/orders/';

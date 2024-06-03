@@ -1,19 +1,26 @@
 import { verify } from "jsonwebtoken";
 import { HTTP_UNAUTHORIZED } from "../constants/http_status";
 
-export default (req:any, res:any, next:any) => {
-  const token = req.headers.access_token as string;
-  console.log(req.headers.access_token);
+export default (req: any, res: any, next: any) => {
+  const token = req.headers['access_token'] as string;
 
-  if(!token) return res.status(HTTP_UNAUTHORIZED).send();
+  //auth th stigmh to const token eixei th domh antikeimenou epomenws to kanw split gia na mporesw na parw mono to kommati pou einai to token etsi wste na
+  // mhn exw error " JsonWebTokenError: jwt malformed"
+  let arraystr = req.headers['access_token'].split(',')[4];
+  let stringToken = arraystr.split('"')[3];
 
-  try {
-      const decodedUser = verify(token, process.env.JWT_SECRET!);
-      req.user = decodedUser;
-  } catch (error) {
-      res.status(HTTP_UNAUTHORIZED).send();
+  if (!stringToken) {
+    console.log('Token not provided');
+    return res.status(HTTP_UNAUTHORIZED).send('Token not provided');
   }
 
-  return next();
-}
-
+  try {
+    console.log('Token received:', stringToken);
+    const decodedUser = verify(stringToken, process.env.JWT_SECRET!);
+    req.user = decodedUser;
+    next();
+  } catch (error) {
+    console.log('Token error:', error);
+    return res.status(HTTP_UNAUTHORIZED).send('Token is invalid or expired');
+  }
+};
