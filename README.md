@@ -1,5 +1,7 @@
 # ergasia
 
+Δεν υπάρχουν εγγεγραμένοι χρήστες.
+
 Frontend served on http://localhost:4200
 
 Website served on http://localhost:5000
