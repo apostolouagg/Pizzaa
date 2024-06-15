@@ -1,6 +1,12 @@
-# ergasia
+# PIZZAA
 
-Δεν υπάρχουν εγγεγραμένοι χρήστες.
+### Existing Users:
+
+Email: stratos@gmail.com
+
+Password: 12345
+
+### Links
 
 Frontend served on http://localhost:4200
 
