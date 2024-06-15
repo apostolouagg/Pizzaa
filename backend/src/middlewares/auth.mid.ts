@@ -6,7 +6,7 @@ export default (req: any, res: any, next: any) => {
 
   //auth th stigmh to const token eixei th domh antikeimenou epomenws to kanw split gia na mporesw na parw mono to kommati pou einai to token etsi wste na
   // mhn exw error " JsonWebTokenError: jwt malformed"
-  let arraystr = req.headers['access_token'].split(',')[4];
+  let arraystr = token.split(',')[4];
   let stringToken = arraystr.split('"')[3];
 
   if (!stringToken) {
