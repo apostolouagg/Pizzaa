@@ -15,7 +15,7 @@ import { PastaComponent } from '../pasta/pasta.component';
     standalone: true,
     templateUrl: './home.component.html',
     styleUrl: './home.component.css',
-    imports: [RouterModule, NgFor, CurrencyPipe, NgIf, DealsComponent, PizzasComponent, DrinksComponent, PastaComponent, ImgsliderComponent]
+    imports: [RouterModule, DealsComponent, PizzasComponent, DrinksComponent, PastaComponent, ImgsliderComponent]
 })
 export class HomeComponent {
 

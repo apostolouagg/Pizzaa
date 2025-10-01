@@ -33,11 +33,14 @@ export class OrderService {
   }
 
   private getToken(){
-    const token = localStorage.getItem('User');
+    const userJson = localStorage.getItem('User');
 
-    if (!token) {
+    if (!userJson) {
       throw new Error('No token found');
     }
+
+    const user = JSON.parse(userJson);
+    const token = user.token;
 
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',

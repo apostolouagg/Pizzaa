@@ -55,7 +55,7 @@ router.get("/", asyncHandler(
 
 /**
  * @swagger
- * /foods/{id}:
+ * /foods/food/{id}:
  *   get:
  *     summary: Get a food by ID
  *     parameters:
