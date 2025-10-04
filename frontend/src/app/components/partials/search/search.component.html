@@ -1,0 +1,15 @@
+<div class="search-container" [class.open]="isOpen">
+  <div class="input-wrapper">
+    <input
+      #s
+      type="text"
+      placeholder="Search..."
+      (keyup.enter)="search(s.value)"
+      [value]="searchTerm"
+      (blur)="closeIfEmpty(s.value)"
+    />
+  </div>
+  <button class="search-btn" (click)="toggleSearch(s)">
+    Search
+  </button>
+</div>

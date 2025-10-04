@@ -1,43 +1,32 @@
 <div class="page">
 
-    <div class="pizza_text">
-        <p style="color: #07b31e">P</p>
-        <p style="color: #07b31e">I</p>
-        <p style="color: white">Z</p>
-        <p style="color: white">Z</p>
-        <p style="color: red">A</p>
-        <p style="color: red">A</p>
-    </div>
+    <div class="slider_container" style="border: 1px solid blue;">
 
-    <div class="slider_container">
-
-        <div class="slider_item" 
-            [ngStyle]="{ 'background-image': 'url('+ images[currentSlide].url +')'}">
+        <div class="slider_item">
+            <img [src]="images[currentSlide].url" alt="{{images[currentSlide].title}}" class="slide_img">
 
             <div id="indicators">
                 @for(img of images; track $index){
-                    <div class="indicator" 
-                    (click)="jumpToSlide($index)"
-                    [ngClass]="{active: $index==currentSlide}"></div>
+                <div class="indicator" (click)="jumpToSlide($index)" [ngClass]="{active: $index==currentSlide}">
+                </div>
                 }
             </div>
 
-            <button class="previousBtn" (click)="previous()">↫</button>
-            <button class="nextBtn" (click)="next()">↬</button>
-            <a  (click)="jumpToFood(''+ images[currentSlide].title +'')"
-                class="pizza_names">
-                {{''+ images[currentSlide].title +''}} <span>➭</span>
+            <a (click)="jumpToFood(images[currentSlide].title)" class="pizza_names">
+                {{ images[currentSlide].title }} <span>➭</span>
             </a>
-
         </div>
+
+        <button class="previousBtn" (click)="previous()">↫</button>
+        <button class="nextBtn" (click)="next()">↬</button>
+
     </div>
 
-    <div class="pizza_text">
-        <p style="color: #07b31e">P</p>
-        <p style="color: #07b31e">I</p>
-        <p style="color: white">Z</p>
-        <p style="color: white">Z</p>
-        <p style="color: red">A</p>
-        <p style="color: red">A</p>
+    <div style="border: 1px solid red;">
+        <p>
+            lalalalalaaaaaaaaaaaaaaaaaaaaaaalalalalalaaaaaaaaaaaaaaaaaaaaaaalalalalalaaaaaaaaaaaaaaaaaaaaaaa
+            lalalalalaaaaaaaaaaaaaaaaaaaaaaalalalalalaaaaaaaaaaaaaaaaaaaaaaalalalalalaaaaaaaaaaaaaaaaaaaaaaa
+            lalalalalaaaaaaaaaaaaaaaaaaaaaaalalalalalaaaaaaaaaaaaaaaaaaaaaaalalalalalaaaaaaaaaaaaaaaaaaaaaaa
+        </p>
     </div>
 </div>

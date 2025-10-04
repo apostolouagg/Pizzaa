@@ -5,13 +5,14 @@ import { Cart } from '../../../shared/models/Cart';
 import { CartService } from '../../../services/cart.service';
 import { UserService } from '../../../services/user.service';
 import { User } from '../../../shared/models/User';
+import { SearchComponent } from "../search/search.component";
 
 @Component({
     selector: 'app-header',
     standalone: true,
     templateUrl: './header.component.html',
     styleUrl: './header.component.css',
-    imports: [NgIf]
+    imports: [NgIf, SearchComponent]
 })
 export class HeaderComponent {
 

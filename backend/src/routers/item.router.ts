@@ -1,7 +1,7 @@
 //Food Router
 import {Router} from 'express';
 import asyncHandler from 'express-async-handler';
-import { FoodModel } from '../models/food.model';
+import { ItemModel } from '../models/item.model';
 
 const router  = Router();
 
@@ -47,7 +47,7 @@ const router  = Router();
 //get foods
 router.get("/", asyncHandler(
     async (req, res) => {
-        const foods = await FoodModel.find();
+        const foods = await ItemModel.find();
         res.send(foods);
     }
 ));
@@ -73,10 +73,20 @@ router.get("/", asyncHandler(
  *               $ref: '#/components/schemas/Food'
  */
 //get food/:id
-router.get("/food/:id", asyncHandler(
+router.get("/item/:id", asyncHandler(
     async (req, res) => {
-        const food = await FoodModel.findById(req.params.id);
-        res.send(food);
+        const item = await ItemModel.findById(req.params.id);
+        res.send(item);
+    }
+));
+
+
+router.get("/search/:searchTerm", asyncHandler(
+    async (req, res) => {
+        const searchTerm = req.params.searchTerm;
+        const foods = (await ItemModel.find())
+        .filter(food => food.name.toLowerCase().includes(searchTerm.toLowerCase()));
+        res.send(foods);
     }
 ));
 

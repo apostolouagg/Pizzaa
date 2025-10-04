@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import foodRouter from '../../backend/src/routers/food.router';
+import foodRouter from './routers/item.router';
 import userRouter from '../../backend/src/routers/user.router';
 import orderRouter from '../../backend/src/routers/order.router';
 import dotenv from 'dotenv';
@@ -21,7 +21,7 @@ app.use(cors({
     origin:["http://localhost:4200"]
 }));
 
-app.use("/api/foods", foodRouter);
+app.use("/api/items", foodRouter);
 app.use("/api/users", userRouter);
 app.use("/api/orders", orderRouter);
 

@@ -1,23 +1,23 @@
 import { Component } from '@angular/core';
-import { Food } from '../../../shared/models/Food';
-import { FoodService } from '../../../services/food.service';
+import { Item } from '../../../shared/models/Item';
+import { ItemService } from '../../../services/item.service';
 import { RouterModule } from '@angular/router';
 import { CurrencyPipe, NgFor, NgIf } from '@angular/common';
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-drinks',
+  selector: 'app-mixanologia',
   standalone: true,
   imports: [RouterModule, NgFor, NgIf, CurrencyPipe],
-  templateUrl: './drinks.component.html',
-  styleUrl: './drinks.component.css'
+  templateUrl: './mixanologia.component.html',
+  styleUrl: './mixanologia.component.css'
 })
-export class DrinksComponent {
+export class MixanologiaComponent {
   
-  foods:Food[] = [];
+  foods:Item[] = [];
 
-  constructor (private foodService:FoodService) {
-    let foodsObservable:Observable<Food[]>;
+  constructor (private foodService:ItemService) {
+    let foodsObservable:Observable<Item[]>;
     foodsObservable = foodService.getAllFood();
 
     foodsObservable.subscribe((serverFoods) => {

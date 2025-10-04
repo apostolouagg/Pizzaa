@@ -1,18 +1,10 @@
 .page{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 100%;
     padding: 2rem 20px 7rem 20px;
     margin: 0 3rem;
-}
-
-.pizza_text{
-    font-family: Calistoga;
-    font-weight: normal;
-    font-size: 50px;
-    padding: 0 1rem;
-    margin: 0 5rem;
 }
 
 p{
@@ -20,33 +12,25 @@ p{
     -webkit-text-stroke-color: black;    
 }
 
-.slider_container{
-    width: 65%;
+.slider_container {
+    position: relative;
     height: 45rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slider_item{
-    position: relative;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
     border-radius: 30px;
     box-shadow: inset 0px 0px 2rem 1px #1111117e;
-    border: #07b31e solid 2px;
-
-    .nextBtn, .previousBtn{
-        position: absolute;
-        top: 50%;
-        margin: 0 1rem;
-        background: transparent;
-        border: none;
-        font-size: 2rem;
-        color: rgba(255, 255, 255, 0.685);
-        font-weight: 600;
-        transition: transform 0.3s ease-in-out;
-    }
+    overflow: hidden;
+    position: relative;
 
     .pizza_names{
         position: absolute;
@@ -78,20 +62,55 @@ p{
             font-weight: 900;
         }
     }
+}
 
-    .nextBtn{
-        right: 0;
-    }
+.slide_img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 30px;
+}
 
-    .previousBtn{
-        left: 0;
-    }
+.previousBtn,
+.nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4rem;
+    height: 8rem;
+    background: rgba(128, 128, 128, 0.418);
+    border: none;
+    cursor: pointer;
+    z-index: 5;
 
-    .nextBtn:hover, .previousBtn:hover{
-        cursor: pointer;
-        color: white;
-        transform: scale(1.1);
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    opacity: 0.4;
+    transition: all 0.3s ease;
+}
+
+.previousBtn {
+    left: -4.1rem;
+    border-top-left-radius: 50% 100%;
+    border-bottom-left-radius: 50% 100%;
+}
+
+.nextBtn {
+    right: -4.1rem;
+    border-top-right-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
+}
+
+.previousBtn:hover,
+.nextBtn:hover {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.05);
+    background: rgba(128, 128, 128, 0.322);
 }
 
 #indicators{

@@ -1,24 +1,24 @@
 import { Component } from '@angular/core';
-import { Food } from '../../../shared/models/Food';
+import { Item } from '../../../shared/models/Item';
 import { ActivatedRoute, Route, Router } from '@angular/router';
-import { FoodService } from '../../../services/food.service';
+import { ItemService } from '../../../services/item.service';
 import { CurrencyPipe, NgIf } from '@angular/common';
 import { CartService } from '../../../services/cart.service';
 import { CartItem } from '../../../shared/models/CartItem';
 
 @Component({
-  selector: 'app-food-page',
+  selector: 'app-item-page',
   standalone: true,
   imports: [CurrencyPipe, NgIf],
-  templateUrl: './food-page.component.html',
-  styleUrl: './food-page.component.css'
+  templateUrl: './item-page.component.html',
+  styleUrl: './item-page.component.css'
 })
-export class FoodPageComponent {
+export class ItemPageComponent {
 
-  food!: Food;
+  food!: Item;
   cart_item!: CartItem;
 
-  constructor(activatedRoute:ActivatedRoute, foodService:FoodService, private cartService:CartService, private router:Router){
+  constructor(activatedRoute:ActivatedRoute, foodService:ItemService, private cartService:CartService, private router:Router){
     activatedRoute.params.subscribe((params) => {
       if(params.id){
         foodService.getFoodById(params.id).subscribe((serverFood) => {

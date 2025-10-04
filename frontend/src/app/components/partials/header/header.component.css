@@ -16,7 +16,7 @@ a, label{
 .navi{
   display: flex;
   justify-content: center;
-  margin: 0.5rem 0 0 14rem;
+  margin: 0.5rem 0 0 11rem;
 }
 
 .navi__child{
@@ -61,10 +61,11 @@ ul{
   display: flex;
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 ul li{
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 a span{
@@ -126,4 +127,10 @@ a span{
 
 .menu a{
   min-width:6rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
 }

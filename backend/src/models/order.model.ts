@@ -1,15 +1,15 @@
 import { model, Schema, Types } from 'mongoose';
-import { Food, FoodSchema } from './food.model';
+import { Item, ItemSchema } from './item.model';
 
 export interface OrderItem{
-    food: Food;
+    food: Item;
     price: number;
     quantity: number;
 }
 
 export const OrderItemSchema = new Schema<OrderItem>(
     {
-        food:{type: FoodSchema, required:true},
+        food:{type: ItemSchema, required:true},
         price:{type: Number, required:true},
         quantity:{type: Number, required:true}
     }

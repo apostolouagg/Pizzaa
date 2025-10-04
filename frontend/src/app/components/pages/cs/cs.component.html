@@ -1,11 +1,11 @@
 <div class="page">
     <div class="products">
-        <h2>PASTA</h2>
-        <!-- PASTA -->
+        <h2>COMPUTER SCIENCE</h2>
+        <!-- COMPUTER SCIENCE -->
         <ul>
             <li *ngFor="let food of foods;">
-                <div *ngIf="food.tag == 'pasta'">
-                    <a routerLink="/food/{{food.id}}">
+                <div *ngIf="food.tag == 'pizzas'">
+                    <a routerLink="/item/{{food.id}}">
                         <img [src]="food.imageUrl" [alt]="food.name">
                         <div class="content">
                             <div class="label">
@@ -13,7 +13,7 @@
                                     {{food.name}}
                                 </div>
                                 <div class="meat" *ngIf="!food.meat">
-                                    <span> 🥦 </span>
+                                    <span> 🎉 ％ </span>
                                 </div>
                             </div>
                             <div class="ingredients">
@@ -25,7 +25,6 @@
                                 </span>
                             </div>
                         </div>
-
                     </a>
                 </div>
             </li>

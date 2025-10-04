@@ -1,13 +1,18 @@
 <header>
     <div class="container">
-        <a class="logo" (click)="onSelect('/')">Pizzaa</a>
+        <a class="logo" (click)="onSelect('/')">UniBookie</a>
 
         <div class="navi">
             <a class="navi__child" (click)="onSelect('/')">Home</a>
-            <a class="navi__child" (click)="onSelect('deals')">Deals</a>
-            <a class="navi__child" (click)="onSelect('pasta')">Pasta</a>
-            <a class="navi__child" (click)="onSelect('pizzas')">Pizzas</a>
-            <a class="navi__child" (click)="onSelect('drinks')">Drinks</a>
+            <a class="navi__child" (click)="onSelect('sales')">Sales</a>
+            <a class="navi__child" (click)="onSelect('eeng')">Electronics Eng.</a>
+            <a class="navi__child" (click)="onSelect('cs')">CS</a>
+            <a class="navi__child" (click)="onSelect('meng')">Mechanical Eng.</a>
+            <a class="navi__child" (click)="onSelect('teng')">Telecoms Eng.</a>
+        </div>
+
+        <div class="search">
+            <app-search></app-search>
         </div>
 
         <nav>

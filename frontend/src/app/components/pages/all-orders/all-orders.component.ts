@@ -6,8 +6,8 @@ import { Router, RouterLink } from '@angular/router';
 import { Cart } from '../../../shared/models/Cart';
 import { map, Observable } from 'rxjs';
 import { CartService } from '../../../services/cart.service';
-import { Food } from '../../../shared/models/Food';
-import { FoodService } from '../../../services/food.service';
+import { Item } from '../../../shared/models/Item';
+import { ItemService } from '../../../services/item.service';
 
 @Component({
   selector: 'app-all-orders',
@@ -19,9 +19,9 @@ import { FoodService } from '../../../services/food.service';
 export class AllOrdersComponent implements OnInit {
   orders: Order[] = [];
   datePipe: any;
-  food!:Food;
+  food!:Item;
 
-  constructor(private orderService: OrderService, private cartService:CartService, private foodService:FoodService, private router:Router) {}
+  constructor(private orderService: OrderService, private cartService:CartService, private foodService:ItemService, private router:Router) {}
 
   ngOnInit(): void {
     this.orderService.getAllOrders().subscribe({
@@ -46,7 +46,7 @@ export class AllOrdersComponent implements OnInit {
         for(let i = 0; i < order.items.length; i++){
 
           this.foodService.getFoodById(order.items[i].food.id.toString()).subscribe(
-            (food:Food) => {
+            (food:Item) => {
               this.food = food;
               console.log(this.food);
               this.cartService.changeQuantityIfExists(this.food.id);

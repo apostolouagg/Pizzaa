@@ -1,8 +1,8 @@
 import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { Food } from '../../shared/models/Food';
+import { Item } from '../../shared/models/Item';
 import { Router, RouterLink } from '@angular/router';
-import { FoodService } from '../../services/food.service';
+import { ItemService } from '../../services/item.service';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -13,10 +13,10 @@ import { Observable } from 'rxjs';
   styleUrl: './imgslider.component.css'
 })
 export class ImgsliderComponent {
-  foods!: Food[];
+  foods!: Item[];
 
-  constructor(foodService:FoodService, private router:Router){
-    let foodsObservable:Observable<Food[]>;
+  constructor(foodService:ItemService, private router:Router){
+    let foodsObservable:Observable<Item[]>;
     foodsObservable = foodService.getAllFood();
 
     foodsObservable.subscribe((serverFoods) => {
@@ -44,7 +44,7 @@ export class ImgsliderComponent {
     let item = this.foods.find(x => x.name === title);
     
     if(item){
-      this.router.navigate(['/food/' + item.id]);
+      this.router.navigate(['/item/' + item.id]);
     }
   }
 }

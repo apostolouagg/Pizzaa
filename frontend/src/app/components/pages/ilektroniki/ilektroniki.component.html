@@ -1,11 +1,11 @@
 <div class="page">
     <div class="products">
-        <h2>PIZZAS</h2>
-        <!-- PIZZAS -->
+        <h2>ELECTRONIC ENGINEERING</h2>
+        <!-- ELECTRONIC ENGINEERING -->
         <ul>
             <li *ngFor="let food of foods;">
-                <div *ngIf="food.tag == 'pizzas'">
-                    <a routerLink="/food/{{food.id}}">
+                <div *ngIf="food.tag == 'pasta'">
+                    <a routerLink="/item/{{food.id}}">
                         <img [src]="food.imageUrl" [alt]="food.name">
                         <div class="content">
                             <div class="label">
@@ -25,6 +25,7 @@
                                 </span>
                             </div>
                         </div>
+
                     </a>
                 </div>
             </li>

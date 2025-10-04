@@ -1,19 +1,7 @@
-h1{
-  font-family: Poppins, sans-serif;
-}
-
 .page{
-  text-align: center;
-}
-
-
-
-/* search result */
-
-.search-result{
-  align-items: center;
-  padding: 0;
-  margin: 2rem 7rem;
+    align-items: center;
+    padding: 0;
+    margin: 2rem 7rem;
 }
 
 .products{
@@ -76,9 +64,3 @@ li a img{
   font-size: 1rem;
   margin-top: 1rem;
 } 
-
-.ingredients{
-  color: #7e7e7e;
-  font-size: 12px;
-  margin-top: 0.4rem;
-}

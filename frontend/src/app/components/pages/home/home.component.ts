@@ -1,33 +1,43 @@
 import { Component } from '@angular/core';
-import { Food } from '../../../shared/models/Food';
-import { FoodService } from '../../../services/food.service';
-import { RouterModule } from '@angular/router';
+import { Item } from '../../../shared/models/Item';
+import { ItemService } from '../../../services/item.service';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { CurrencyPipe, NgFor, NgIf } from '@angular/common';
-import { DealsComponent } from "../deals/deals.component";
-import { PizzasComponent } from "../pizzas/pizzas.component";
-import { DrinksComponent } from "../drinks/drinks.component";
+import { SalesComponent } from "../sales/sales.component";
+import { CsComponent } from "../cs/cs.component";
+import { MixanologiaComponent } from "../mixanologia/mixanologia.component";
 import { ImgsliderComponent } from "../../imgslider/imgslider.component";
 import { Observable } from 'rxjs';
-import { PastaComponent } from '../pasta/pasta.component';
+import { IlektronikiComponent } from '../ilektroniki/ilektroniki.component';
+import { TilepikinoniesComponent } from "../tilepikinonies/tilepikinonies.component";
 
 @Component({
-    selector: 'app-home',
-    standalone: true,
-    templateUrl: './home.component.html',
-    styleUrl: './home.component.css',
-    imports: [RouterModule, DealsComponent, PizzasComponent, DrinksComponent, PastaComponent, ImgsliderComponent]
+  selector: 'app-home',
+  standalone: true,
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.css',
+  imports: [RouterModule, SalesComponent, CsComponent, MixanologiaComponent, IlektronikiComponent, ImgsliderComponent, TilepikinoniesComponent, NgIf, NgFor, CurrencyPipe]
 })
 export class HomeComponent {
 
-  foods:Food[] = [];
+  foods: Item[] = [];
+  paramsFlag = false;
 
-  constructor (private foodService:FoodService) {
-    let foodsObservable:Observable<Food[]>;
-    foodsObservable = foodService.getAllFood();
+  constructor(private foodService: ItemService, activatedRoute: ActivatedRoute) {
 
-    foodsObservable.subscribe((serverFoods) => {
-      this.foods = serverFoods;
-    });
+    activatedRoute.params.subscribe((params) => {
+
+      let foodsObservable: Observable<Item[]>;
+
+      if (params.searchTerm) {
+        this.paramsFlag = true;
+        foodsObservable = this.foodService.getAllFoodBySearchTerm(params.searchTerm);
+
+        foodsObservable.subscribe((serverFoods) => {
+          this.foods = serverFoods;
+        });
+      }
+    })
   }
 
   ngOnInit(): void {
@@ -38,9 +48,9 @@ export class HomeComponent {
 
 
   //images for slider
-  images:any[] = [
+  images: any[] = [
     {
-      url: '/assets/pizza/margarita.jpg',
+      url: '/assets/pizza/16.jpg',
       title: 'Margarita'
     },
     {
