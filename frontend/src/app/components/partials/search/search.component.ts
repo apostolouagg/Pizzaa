@@ -11,9 +11,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class SearchComponent {
 
   searchTerm = '';
-  constructor(activatedRoute:ActivatedRoute,private router:Router) {
+  constructor(activatedRoute: ActivatedRoute, private router: Router) {
     activatedRoute.params.subscribe((params) => {
-      if(params.searchTerm) this.searchTerm = params.searchTerm;
+      if (params.searchTerm) this.searchTerm = params.searchTerm;
     });
   }
 
@@ -23,9 +23,11 @@ export class SearchComponent {
   isOpen: boolean = false;
 
   toggleSearch(input: HTMLInputElement) {
-    this.isOpen = !this.isOpen;
-    if (this.isOpen) {
-      setTimeout(() => input.focus(), 300);
+    if (!this.isOpen) {
+      this.isOpen = true;
+      setTimeout(() => input.focus(), 100);
+    } else {
+      this.search(input.value);
     }
   }
 
@@ -35,9 +37,9 @@ export class SearchComponent {
     }
   }
 
-  search(term:string):void{
-    if(term)
-    this.router.navigateByUrl('/search/'+ term);
+  search(term: string): void {
+    if (term)
+      this.router.navigateByUrl('/search/' + term);
   }
 
 }

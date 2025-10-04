@@ -82,3 +82,11 @@ li a img{
   font-size: 12px;
   margin-top: 0.4rem;
 }
+
+.empty p{
+  margin: 15% auto;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 3rem;
+  color: #a9a9a9;
+}

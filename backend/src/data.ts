@@ -270,7 +270,7 @@ export const sample_foods: any[] = [
         id:'32',
         name: 'Coca-Cola Zero 1,5lt',
         price: 2.40,
-        imageUrl: '/assets/drinks/coke_zero_15lt.jpg',
+        imageUrl: '/assets/drinks/16.jpg',
         tag: 'drinks'
     },
     {   

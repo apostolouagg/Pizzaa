@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-imgslider',
   standalone: true,
-  imports: [NgFor, NgIf, CommonModule, RouterLink],
+  imports: [CommonModule],
   templateUrl: './imgslider.component.html',
   styleUrl: './imgslider.component.css'
 })
