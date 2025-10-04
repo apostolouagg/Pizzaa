@@ -42,7 +42,7 @@ li a:hover{
 }
  
 li a img{
-  object-fit: cover;
+  object-fit: scale-down;
   height: 14rem;
 }
 
