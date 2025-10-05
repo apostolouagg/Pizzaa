@@ -1,6 +1,6 @@
 <div class="page">
 
-    <div class="slider_container" style="border: 1px solid blue;">
+    <div class="slider_container">
 
         <div class="slider_item">
             <img [src]="images[currentSlide].url" alt="{{images[currentSlide].title}}" class="slide_img">
@@ -12,9 +12,9 @@
                 }
             </div>
 
-            <a (click)="jumpToFood(images[currentSlide].title)" class="pizza_names">
+            <!-- <a (click)="jumpToFood(images[currentSlide].title)" class="pizza_names">
                 {{ images[currentSlide].title }} <span>➭</span>
-            </a>
+            </a> -->
         </div>
 
         <button class="previousBtn" (click)="previous()">↫</button>
@@ -22,11 +22,25 @@
 
     </div>
 
-    <div style="border: 1px solid red;">
-        <p>
-            lalalalalaaaaaaaaaaaaaaaaaaaaaaalalalalalaaaaaaaaaaaaaaaaaaaaaaalalalalalaaaaaaaaaaaaaaaaaaaaaaa
-            lalalalalaaaaaaaaaaaaaaaaaaaaaaalalalalalaaaaaaaaaaaaaaaaaaaaaaalalalalalaaaaaaaaaaaaaaaaaaaaaaa
-            lalalalalaaaaaaaaaaaaaaaaaaaaaaalalalalalaaaaaaaaaaaaaaaaaaaaaaalalalalalaaaaaaaaaaaaaaaaaaaaaaa
-        </p>
+    <div class="slider-text">
+        <div class="product-info">
+            <h2>On Sale!</h2>
+            <p>{{ images[currentSlide].title }}</p>
+            <div class="ingredients">
+                <span class="sale">
+                    {{images[currentSlide].price+20 | currency : '€'}}
+                </span>
+                <span style="color: red;">
+                    {{images[currentSlide].price | currency : '€'}}
+                </span>
+                <!-- {{ images[currentSlide].price }} -->
+            </div>
+
+            <button class="arrow-btn" (click)="jumpToFood(images[currentSlide].title)">
+                Explore <span class="arrow">➜</span>
+            </button>
+        </div>
     </div>
+
+
 </div>

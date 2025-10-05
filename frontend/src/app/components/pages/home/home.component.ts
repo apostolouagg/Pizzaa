@@ -50,28 +50,34 @@ export class HomeComponent {
   //images for slider
   images: any[] = [
     {
-      url: '/assets/pizza/16.jpg',
-      title: 'Margarita'
+      url: '/assets/sales/1.jpg',
+      title: 'Σχεδίαση Συστημάτων Μηχανικής Μάθησης',
+      price: 29.70
     },
     {
-      url: 'assets/pizza/american_classic.jpg',
-      title: 'American Classic'
+      url: 'assets/sales/4.jpg',
+      title: 'Εισαγωγή στον Υπολογισμό και τον Προγραμματισμό με την Python',
+      price: 40.50
     },
     {
-      url: 'assets/pizza/peperoni.jpg',
-      title: 'Peperoni'
+      url: 'assets/sales/16.jpg',
+      title: 'Μικροηλεκτρονικά Κυκλώματα',
+      price: 81.00
     },
     {
-      url: 'assets/pizza/fiorentina.jpg',
-      title: 'Fiorentina'
+      url: 'assets/sales/22.jpg',
+      title: 'Ασύρματες Επικοινωνίες',
+      price: 54.00
     },
     {
-      url: 'assets/pizza/veggie.jpg',
-      title: 'Veggie'
+      url: 'assets/sales/37.jpg',
+      title: 'Βασικές Αρχές Μηχανών Εσωτερικής Καύσης',
+      price: 76.50
     },
     {
-      url: 'assets/pizza/garden_classic.jpg',
-      title: 'Garden Classic'
+      url: 'assets/sales/38.jpg',
+      title: 'Ανάλυση Μηχανολογικών Καταστροφών',
+      price: 25.20
     },
   ];
 }

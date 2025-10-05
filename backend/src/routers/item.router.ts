@@ -10,7 +10,7 @@ const router  = Router();
  * @swagger
  * components:
  *   schemas:
- *     Food:
+ *     Items:
  *       type: object
  *       properties:
  *         id:
@@ -31,9 +31,9 @@ const router  = Router();
 
 /**
  * @swagger
- * /foods:
+ * /items:
  *   get:
- *     summary: Get all foods
+ *     summary: Get all items
  *     responses:
  *       200:
  *         description: Success
@@ -44,20 +44,20 @@ const router  = Router();
  *               items:
  *                 $ref: '#/components/schemas/Food'
  */
-//get foods
+//get items
 router.get("/", asyncHandler(
     async (req, res) => {
-        const foods = await ItemModel.find();
-        res.send(foods);
+        const items = await ItemModel.find();
+        res.send(items);
     }
 ));
 
 
 /**
  * @swagger
- * /foods/food/{id}:
+ * /items/item/{id}:
  *   get:
- *     summary: Get a food by ID
+ *     summary: Get a item by ID
  *     parameters:
  *       - in: path
  *         name: id
@@ -70,9 +70,9 @@ router.get("/", asyncHandler(
  *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/Food'
+ *               $ref: '#/components/schemas/Item'
  */
-//get food/:id
+//get item/:id
 router.get("/item/:id", asyncHandler(
     async (req, res) => {
         const item = await ItemModel.findById(req.params.id);
@@ -84,9 +84,9 @@ router.get("/item/:id", asyncHandler(
 router.get("/search/:searchTerm", asyncHandler(
     async (req, res) => {
         const searchTerm = req.params.searchTerm;
-        const foods = (await ItemModel.find())
+        const items = (await ItemModel.find())
         .filter(food => food.name.toLowerCase().includes(searchTerm.toLowerCase()));
-        res.send(foods);
+        res.send(items);
     }
 ));
 

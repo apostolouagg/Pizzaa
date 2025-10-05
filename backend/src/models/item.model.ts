@@ -30,4 +30,4 @@ export const ItemSchema = new Schema<Item>(
     }
 );
 
-export const ItemModel = model<Item>('food', ItemSchema);
+export const ItemModel = model<Item>('item', ItemSchema);

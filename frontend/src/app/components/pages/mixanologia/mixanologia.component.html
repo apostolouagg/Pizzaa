@@ -4,7 +4,7 @@
         <!-- MECHANICAL ENGINEERING -->
         <ul>
             <li *ngFor="let food of foods;">
-                <div *ngIf="food.tag == 'drinks'">
+                <div *ngIf="food.tag.includes('meng')">
                     <a routerLink="/item/{{food.id}}">
                         <img [src]="food.imageUrl" [alt]="food.name">
                         <div class="content">
@@ -12,9 +12,17 @@
                                 {{food.name}}
                             </div>
                             <div class="price">
-                                <span>
+                                <span *ngIf="!food.tag.includes('sales')">
                                     {{food.price | currency : '€'}}
                                 </span>
+                                <div *ngIf="food.tag.includes('sales')">
+                                    <span class="sale">
+                                        {{food.price+20 | currency : '€'}}
+                                    </span>
+                                    <span style="color: red;">
+                                        {{food.price | currency : '€'}}
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </a>

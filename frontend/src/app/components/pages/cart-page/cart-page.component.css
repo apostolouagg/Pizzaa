@@ -178,3 +178,7 @@ li .remove-button:hover{
 .remove-button:active, .clear-button:active{
     font-size: 0.73rem;
 }
+
+.sale{
+  text-decoration: line-through;
+}

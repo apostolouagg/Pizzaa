@@ -1,15 +1,35 @@
 .page{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100%;
     padding: 2rem 20px 7rem 20px;
     margin: 0 3rem;
 }
 
-p{
+/* p{
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;    
+} */
+
+.slider-text {
+  flex: 0 0 25%; /* κείμενο σταθερό πλάτος */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  max-width: 600px;
+  margin-left: 10rem;
+}
+
+.slider-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-family: Poppins, sans-serif;
+  color: #333;
+  max-width: 100%;
+  word-wrap: break-word;
+  word-break: keep-all;
 }
 
 .slider_container {
@@ -135,4 +155,67 @@ p{
     &.active{
         background-color: #07b31e;
     }
+}
+
+.product-info {
+  text-align: left;
+  font-family: Poppins, sans-serif;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  max-width: 500px;
+}
+
+.product-info p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.product-info .ingredients {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* κουμπί με animation βέλους */
+.arrow-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #07b31e;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.arrow-btn:hover {
+  background-color: #059716;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.arrow-btn:hover .arrow {
+  transform: translateX(6px);
+}
+
+.sale{
+    text-decoration: line-through;
+}
+
+span{
+    font-size: 1.1rem;
+    margin: 0 0.2rem;
 }

@@ -41,7 +41,7 @@ input{
   border-radius: 5px;
   outline: none;
   border: none;
-  background-color: rgba(181, 181, 181, 0.406);
+  background-color: rgba(181, 181, 181, 0.178);
   padding: 1rem;
   font-size: 1rem;
   width: 28rem;
@@ -96,6 +96,6 @@ fieldset{
   padding: 12px;
 }
 
-input:hover, label:hover{
+label:hover{
   cursor: pointer;
 }

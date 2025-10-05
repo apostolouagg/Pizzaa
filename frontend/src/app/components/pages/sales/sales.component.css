@@ -23,7 +23,7 @@ ul{
 }
 
 li a{
-  height: 20rem;
+  height: 22rem;
   width: 17rem;
   border: 1px solid whitesmoke;
   border-radius: 1rem;
@@ -60,13 +60,23 @@ li a img{
   background: white;
   padding: 0.5rem 100% 0.5rem 0;
   color: #414141;
-  margin-top: 0.7rem;
+  margin-top: 1rem;
   font-size: 1rem;
   margin-top: 1rem;
 } 
 
-.ingredients{
+/* .ingredients{
   color: #7e7e7e;
   font-size: 12px;
   margin-top: 0.4rem;
+} */
+
+.name {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.sale{
+  text-decoration: line-through;
 }

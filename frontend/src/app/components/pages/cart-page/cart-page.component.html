@@ -32,7 +32,19 @@
                 </select>
             </div>
             <div>
-                {{cartItem.price | currency: '€'}}
+                <span *ngIf="!cartItem.food.tag.includes('sales')">
+                    <div>
+                        {{cartItem.price | currency: '€'}}
+                    </div>
+                </span>
+                <div *ngIf="cartItem.food.tag.includes('sales')">
+                    <span class="sale">
+                        {{cartItem.price+20 | currency : '€'}}
+                    </span>
+                    <span style="color: red;">
+                        {{cartItem.price | currency : '€'}}
+                    </span>
+                </div>
             </div>    
             <div>
                 <button class="remove-button" (click)="removeFromCart(cartItem)">Remove</button>

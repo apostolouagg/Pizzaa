@@ -71,3 +71,15 @@ button:hover{
   opacity: 0.9;
   cursor: pointer;
 }
+
+.sale{
+  text-decoration: line-through;
+}
+
+.prices-order{
+  display: flex;
+}
+
+div .sale{
+  margin: 0 0.5rem;
+}

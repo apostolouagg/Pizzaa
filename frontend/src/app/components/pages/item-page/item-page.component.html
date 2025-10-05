@@ -13,10 +13,18 @@
         {{food.ingredients}}
       </span>
 
-      <div class="price">
-        <span>
-          {{food.price | currency : '€' }}
+      <div class="price prices-order">
+        <span *ngIf="!food.tag.includes('sales')">
+            {{food.price | currency : '€'}}
         </span>
+        <div *ngIf="food.tag.includes('sales')">
+            <span class="sale">
+                {{food.price+20 | currency : '€'}}
+            </span>
+            <span style="color: red;">
+                {{food.price | currency : '€'}}
+            </span>
+        </div>
       </div>
 
       <button (click)="addToCart()">Add To Cart</button>

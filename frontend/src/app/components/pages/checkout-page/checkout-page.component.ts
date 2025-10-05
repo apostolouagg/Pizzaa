@@ -4,14 +4,14 @@ import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { CartService } from '../../../services/cart.service';
 import { UserService } from '../../../services/user.service';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
-import { CurrencyPipe, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import { OrderItemsListComponent } from '../../partials/order-items-list/order-items-list.component';
 import { OrderService } from '../../../services/order.service';
 
 @Component({
   selector: 'app-checkout-page',
   standalone: true,
-  imports: [ReactiveFormsModule, FormsModule, NgIf, RouterModule, CurrencyPipe, OrderItemsListComponent],
+  imports: [ReactiveFormsModule, FormsModule, NgIf, RouterModule, OrderItemsListComponent],
   templateUrl: './checkout-page.component.html',
   styleUrl: './checkout-page.component.css'
 })
