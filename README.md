@@ -2,7 +2,7 @@
 
 ### Existing Users:
 
-Email: stratos@gmail.com
+Email: apostolou@gmail.com
 
 Password: 12345
 
@@ -11,8 +11,6 @@ Password: 12345
 Frontend served on http://localhost:4200
 
 Website served on http://localhost:5000
-
-Swagger Documentation on http://localhost:5000/api-docs
 
 ### Database used:
 
