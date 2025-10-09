@@ -1,0 +1,478 @@
+[{
+  "_id": {
+    "$oid": "68e284791c7315acb0847772"
+  },
+  "name": "stratos",
+  "address": "Odos 123 Kipseli",
+  "paymentId": "cash",
+  "totalPrice": 78.5,
+  "items": [
+    {
+      "food": {
+        "name": "Σχεδίαση Συστημάτων Μηχανικής Μάθησης",
+        "ingredients": "Μια Επαναληπτική Προσέγγιση για την Ανάπτυξη Έτοιμων για Παραγωγική Λειτουργία Εφαρμογών. Συγγραφέας/εις: Chip Huyen",
+        "price": 29,
+        "imageUrl": "/assets/epistimi_upologistwn/1.jpg",
+        "meat": true,
+        "tag": "cs, sales",
+        "_id": {
+          "$oid": "68e26360cb84c080a36fb0bb"
+        },
+        "createdAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        },
+        "updatedAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        }
+      },
+      "price": 29,
+      "quantity": 1,
+      "_id": {
+        "$oid": "68e283d2b8acb163655d5dff"
+      }
+    },
+    {
+      "food": {
+        "name": "Ψηφιακή Σχεδίαση, Με Εκτενή Παρουσίαση των Verilog, VHDL και SystemVerilog",
+        "ingredients": "6η Έκδοση. Συγγραφέας/εις: Morris Mano, Michael Ciletti",
+        "price": 49.5,
+        "imageUrl": "/assets/ilektroniki/20.jpg",
+        "meat": true,
+        "tag": "eeng",
+        "_id": {
+          "$oid": "68e2713acb84c080a36fb0d1"
+        },
+        "createdAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        },
+        "updatedAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        }
+      },
+      "price": 49.5,
+      "quantity": 1,
+      "_id": {
+        "$oid": "68e283d2b8acb163655d5e01"
+      }
+    }
+  ],
+  "user": {
+    "$oid": "666d561cf182ab72c6e2a357"
+  },
+  "createdAt": {
+    "$date": "2025-10-05T14:42:26.333Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-05T14:42:26.333Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e284a71c7315acb0847774"
+  },
+  "name": "stratos",
+  "address": "Odos 123 Kipseli",
+  "paymentId": "cash",
+  "totalPrice": 128.7,
+  "items": [
+    {
+      "food": {
+        "name": "Σχεδίαση Συστημάτων Μηχανικής Μάθησης",
+        "ingredients": "Μια Επαναληπτική Προσέγγιση για την Ανάπτυξη Έτοιμων για Παραγωγική Λειτουργία Εφαρμογών. Συγγραφέας/εις: Chip Huyen",
+        "price": 29.7,
+        "imageUrl": "/assets/epistimi_upologistwn/1.jpg",
+        "meat": true,
+        "tag": "cs, sales",
+        "_id": {
+          "$oid": "68e26360cb84c080a36fb0bb"
+        },
+        "createdAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        },
+        "updatedAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        }
+      },
+      "price": 29.7,
+      "quantity": 1,
+      "_id": {
+        "$oid": "68e283e9b8acb163655d5e54"
+      }
+    },
+    {
+      "food": {
+        "name": "Ψηφιακή Σχεδίαση, Με Εκτενή Παρουσίαση των Verilog, VHDL και SystemVerilog",
+        "ingredients": "6η Έκδοση. Συγγραφέας/εις: Morris Mano, Michael Ciletti",
+        "price": 49.5,
+        "imageUrl": "/assets/ilektroniki/20.jpg",
+        "meat": true,
+        "tag": "eeng",
+        "_id": {
+          "$oid": "68e2713acb84c080a36fb0d1"
+        },
+        "createdAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        },
+        "updatedAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        }
+      },
+      "price": 99,
+      "quantity": 2,
+      "_id": {
+        "$oid": "68e283e9b8acb163655d5e56"
+      }
+    }
+  ],
+  "user": {
+    "$oid": "666d561cf182ab72c6e2a357"
+  },
+  "createdAt": {
+    "$date": "2025-10-05T14:42:49.405Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-05T14:42:49.405Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e284e6837d088ae4d0f782"
+  },
+  "name": "stratos",
+  "address": "Odos 123 Kipseli",
+  "paymentId": "card",
+  "totalPrice": 405,
+  "items": [
+    {
+      "food": {
+        "name": "Μικροηλεκτρονικά Κυκλώματα",
+        "ingredients": "8η Έκδοση. Συγγραφέας/εις: Sedra Adel, Smith Keneth, Carusone Tony Chan, Gaudet Vincent",
+        "price": 81,
+        "imageUrl": "/assets/ilektroniki/16.jpg",
+        "meat": true,
+        "tag": "eeng, sales",
+        "_id": {
+          "$oid": "68e26fb9cb84c080a36fb0cd"
+        },
+        "createdAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        },
+        "updatedAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        }
+      },
+      "price": 405,
+      "quantity": 5,
+      "_id": {
+        "$oid": "68e284e6837d088ae4d0f783"
+      }
+    }
+  ],
+  "user": {
+    "$oid": "666d561cf182ab72c6e2a357"
+  },
+  "createdAt": {
+    "$date": "2025-10-05T14:47:02.061Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-05T14:47:02.061Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68e6e473756099fa0ab16458"
+  },
+  "name": "Vasilis",
+  "address": "Tsamadou 15, Piraeus, 18534",
+  "paymentId": "cash",
+  "totalPrice": 121.3,
+  "items": [
+    {
+      "food": {
+        "name": "Σχεδίαση Συστημάτων Μηχανικής Μάθησης",
+        "ingredients": "Μια Επαναληπτική Προσέγγιση για την Ανάπτυξη Έτοιμων για Παραγωγική Λειτουργία Εφαρμογών. Συγγραφέας/εις: Chip Huyen",
+        "price": 29.7,
+        "imageUrl": "/assets/epistimi_upologistwn/1.jpg",
+        "meat": true,
+        "tag": "cs, sales",
+        "_id": {
+          "$oid": "68e26360cb84c080a36fb0bb"
+        },
+        "createdAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        },
+        "updatedAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        }
+      },
+      "price": 89.1,
+      "quantity": 3,
+      "_id": {
+        "$oid": "68e6e473756099fa0ab16459"
+      }
+    },
+    {
+      "food": {
+        "name": "Ανάλυση Δεδομένων με Python",
+        "ingredients": "Διαχείριση Δεδομένων με pandas, NumPy και Jupyter. Συγγραφέας/εις: Wes McKinney",
+        "price": 32.2,
+        "imageUrl": "/assets/epistimi_upologistwn/2.jpg",
+        "meat": true,
+        "tag": "cs",
+        "_id": {
+          "$oid": "68e267f6cb84c080a36fb0be"
+        },
+        "createdAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        },
+        "updatedAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        }
+      },
+      "price": 32.2,
+      "quantity": 1,
+      "_id": {
+        "$oid": "68e6e473756099fa0ab1645b"
+      }
+    }
+  ],
+  "user": {
+    "$oid": "68e6d6c2756099fa0ab16417"
+  },
+  "createdAt": {
+    "$date": "2025-10-08T22:23:48.002Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-08T22:23:48.002Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68e6e553756099fa0ab1646e"
+  },
+  "name": "Aggeliki",
+  "address": "Neorion, Piraeus, 18534",
+  "paymentId": "card",
+  "totalPrice": 128.7,
+  "items": [
+    {
+      "food": {
+        "name": "Σχεδίαση Συστημάτων Μηχανικής Μάθησης",
+        "ingredients": "Μια Επαναληπτική Προσέγγιση για την Ανάπτυξη Έτοιμων για Παραγωγική Λειτουργία Εφαρμογών. Συγγραφέας/εις: Chip Huyen",
+        "price": 29.7,
+        "imageUrl": "/assets/epistimi_upologistwn/1.jpg",
+        "meat": true,
+        "tag": "cs, sales",
+        "_id": {
+          "$oid": "68e26360cb84c080a36fb0bb"
+        },
+        "createdAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        },
+        "updatedAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        }
+      },
+      "price": 29.7,
+      "quantity": 1,
+      "_id": {
+        "$oid": "68e6e553756099fa0ab1646f"
+      }
+    },
+    {
+      "food": {
+        "name": "Ψηφιακή Σχεδίαση, Με Εκτενή Παρουσίαση των Verilog, VHDL και SystemVerilog",
+        "ingredients": "6η Έκδοση. Συγγραφέας/εις: Morris Mano, Michael Ciletti",
+        "price": 49.5,
+        "imageUrl": "/assets/ilektroniki/20.jpg",
+        "meat": true,
+        "tag": "eeng",
+        "_id": {
+          "$oid": "68e2713acb84c080a36fb0d1"
+        },
+        "createdAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        },
+        "updatedAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        }
+      },
+      "price": 99,
+      "quantity": 2,
+      "_id": {
+        "$oid": "68e6e553756099fa0ab16471"
+      }
+    }
+  ],
+  "user": {
+    "$oid": "68e6d6c2756099fa0ab16417"
+  },
+  "createdAt": {
+    "$date": "2025-10-08T22:27:31.763Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-08T22:27:31.763Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68e6e568756099fa0ab16481"
+  },
+  "name": "Aggeliki",
+  "address": "Neorion, Piraeus, 18534",
+  "paymentId": "card",
+  "totalPrice": 13.5,
+  "items": [
+    {
+      "food": {
+        "name": "Ειδικό Χωροταξικό για τις Ανανεώσιμες Πηγές Ενέργειας: ΕΝΑΣ ΧΡΟΝΟΣ ΜΕΤΑ",
+        "ingredients": "Συγγραφέας/εις: Μελισσάς Δημήτρης",
+        "price": 13.5,
+        "imageUrl": "/assets/mixanologia/40.jpg",
+        "meat": true,
+        "tag": "meng",
+        "_id": {
+          "$oid": "68e2738fcb84c080a36fb0d6"
+        },
+        "createdAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        },
+        "updatedAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        }
+      },
+      "price": 13.5,
+      "quantity": 1,
+      "_id": {
+        "$oid": "68e6e568756099fa0ab16482"
+      }
+    }
+  ],
+  "user": {
+    "$oid": "68e6d6c2756099fa0ab16417"
+  },
+  "createdAt": {
+    "$date": "2025-10-08T22:27:52.933Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-08T22:27:52.933Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68e6e572756099fa0ab1648c"
+  },
+  "name": "Aggeliki",
+  "address": "Neorion, Piraeus, 18534",
+  "paymentId": "cash",
+  "totalPrice": 162,
+  "items": [
+    {
+      "food": {
+        "name": "Εισαγωγή στον Υπολογισμό και τον Προγραμματισμό με την Python",
+        "ingredients": "3η έκδοση. Συγγραφέας/εις: John V. Guttag",
+        "price": 40.5,
+        "imageUrl": "/assets/epistimi_upologistwn/4.jpg",
+        "meat": true,
+        "tag": "cs, sales",
+        "_id": {
+          "$oid": "68e26973cb84c080a36fb0c0"
+        },
+        "createdAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        },
+        "updatedAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        }
+      },
+      "price": 162,
+      "quantity": 4,
+      "_id": {
+        "$oid": "68e6e572756099fa0ab1648d"
+      }
+    }
+  ],
+  "user": {
+    "$oid": "68e6d6c2756099fa0ab16417"
+  },
+  "createdAt": {
+    "$date": "2025-10-08T22:28:02.203Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-08T22:28:02.203Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68e6f1be756099fa0ab164c9"
+  },
+  "name": "Vasilis",
+  "address": "Tsamadou 15, Piraeus, 18534",
+  "paymentId": "cash",
+  "totalPrice": 121.3,
+  "items": [
+    {
+      "food": {
+        "name": "Σχεδίαση Συστημάτων Μηχανικής Μάθησης",
+        "ingredients": "Μια Επαναληπτική Προσέγγιση για την Ανάπτυξη Έτοιμων για Παραγωγική Λειτουργία Εφαρμογών. Συγγραφέας/εις: Chip Huyen",
+        "price": 29.7,
+        "imageUrl": "/assets/epistimi_upologistwn/1.jpg",
+        "meat": true,
+        "tag": "cs, sales",
+        "_id": {
+          "$oid": "68e26360cb84c080a36fb0bb"
+        },
+        "createdAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        },
+        "updatedAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        }
+      },
+      "price": 89.1,
+      "quantity": 3,
+      "_id": {
+        "$oid": "68e6f1be756099fa0ab164ca"
+      }
+    },
+    {
+      "food": {
+        "name": "Ανάλυση Δεδομένων με Python",
+        "ingredients": "Διαχείριση Δεδομένων με pandas, NumPy και Jupyter. Συγγραφέας/εις: Wes McKinney",
+        "price": 32.2,
+        "imageUrl": "/assets/epistimi_upologistwn/2.jpg",
+        "meat": true,
+        "tag": "cs",
+        "_id": {
+          "$oid": "68e267f6cb84c080a36fb0be"
+        },
+        "createdAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        },
+        "updatedAt": {
+          "$date": "2024-05-29T11:06:53.190Z"
+        }
+      },
+      "price": 32.2,
+      "quantity": 1,
+      "_id": {
+        "$oid": "68e6f1be756099fa0ab164cc"
+      }
+    }
+  ],
+  "user": {
+    "$oid": "68e6d6c2756099fa0ab16417"
+  },
+  "createdAt": {
+    "$date": "2025-10-08T23:20:30.346Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-08T23:20:30.346Z"
+  },
+  "__v": 0
+}]

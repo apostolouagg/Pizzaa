@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "666d561cf182ab72c6e2a357"
+  },
+  "name": "stratos",
+  "email": "stratos@gmail.com",
+  "password": "$2a$10$cV3HW5aXzj41YbiAnwbr4uwAlPMtdZMvuUqHVVXxqW/qGe9QhiAke",
+  "address": "Odos 123 Kipseli",
+  "createdAt": {
+    "$date": "2024-06-15T08:51:40.307Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-15T08:51:40.307Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68d2e0e006218ded41fcdd4d"
+  },
+  "name": "agge",
+  "email": "agge@",
+  "password": "$2a$10$GPbRR8c0OpH3/wpW8fRlleMHTjTAHDH5.AGdZqYD8Bq3og7pJ8Wxa",
+  "address": "12345 pireas",
+  "createdAt": {
+    "$date": "2025-09-23T18:03:12.739Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-23T18:03:12.739Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68d2e0f406218ded41fcdd50"
+  },
+  "name": "agge",
+  "email": "agge",
+  "password": "$2a$10$dk9APuTqtbJsWU6u5wZ/t.w2AZ1cCRhwEhjGtej4NKHJ6WT0E3mGO",
+  "address": "12345 pireas",
+  "createdAt": {
+    "$date": "2025-09-23T18:03:32.011Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-23T18:03:32.011Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68d2e10006218ded41fcdd53"
+  },
+  "name": "agge",
+  "email": "agge@gmail.com",
+  "password": "$2a$10$P6T2SHHFjaI64XpVjnFY6.SkT24HuFr1TjQUKPk3dGyXm4HQTPAe2",
+  "address": "12345 pireas",
+  "createdAt": {
+    "$date": "2025-09-23T18:03:44.868Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-23T18:03:44.868Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68d2e67a73e10561e7f5de17"
+  },
+  "name": "Aggeliki",
+  "email": "aggeliki@gmail.com",
+  "password": "$2a$10$pIhaSBUBkZD9GYLpgSQag.G34bhV3L/ep.hMEM05diPe0c4fBZVAq",
+  "address": "Piraeus 18534",
+  "createdAt": {
+    "$date": "2025-09-23T18:27:06.660Z"
+  },
+  "updatedAt": {
+    "$date": "2025-09-23T18:27:06.660Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68e6d6c2756099fa0ab16417"
+  },
+  "name": "Aggeliki",
+  "email": "apostolou@gmail.com",
+  "password": "$2a$10$Qca/2WbhHK/kGxZhqxu1f.syLpm7IdQ2ORlLFfZIyH6zhg2L9TuGu",
+  "address": "Neorion, Piraeus, 18534",
+  "createdAt": {
+    "$date": "2025-10-08T21:25:22.588Z"
+  },
+  "updatedAt": {
+    "$date": "2025-10-08T21:25:22.588Z"
+  },
+  "__v": 0
+}]

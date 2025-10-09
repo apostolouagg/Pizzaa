@@ -1,0 +1,799 @@
+[{
+  "_id": {
+    "$oid": "68e26360cb84c080a36fb0bb"
+  },
+  "name": "Σχεδίαση Συστημάτων Μηχανικής Μάθησης",
+  "ingredients": "Μια Επαναληπτική Προσέγγιση για την Ανάπτυξη Έτοιμων για Παραγωγική Λειτουργία Εφαρμογών. Συγγραφέας/εις: Chip Huyen",
+  "price": 29.7,
+  "imageUrl": "/assets/epistimi_upologistwn/1.jpg",
+  "meat": true,
+  "tag": "cs, sales",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e267f6cb84c080a36fb0be"
+  },
+  "name": "Ανάλυση Δεδομένων με Python",
+  "ingredients": "Διαχείριση Δεδομένων με pandas, NumPy και Jupyter. Συγγραφέας/εις: Wes McKinney",
+  "price": 32.2,
+  "imageUrl": "/assets/epistimi_upologistwn/2.jpg",
+  "meat": true,
+  "tag": "cs",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e268d7cb84c080a36fb0bf"
+  },
+  "name": "Πώς να Πείσετε με Δεδομένα",
+  "ingredients": "Συγγραφέας/εις: Miro Kazakoff",
+  "price": 31.5,
+  "imageUrl": "/assets/epistimi_upologistwn/3.jpg",
+  "meat": true,
+  "tag": "cs",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e26973cb84c080a36fb0c0"
+  },
+  "name": "Εισαγωγή στον Υπολογισμό και τον Προγραμματισμό με την Python",
+  "ingredients": "3η έκδοση. Συγγραφέας/εις: John V. Guttag",
+  "price": 40.5,
+  "imageUrl": "/assets/epistimi_upologistwn/4.jpg",
+  "meat": true,
+  "tag": "cs, sales",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e269d9cb84c080a36fb0c1"
+  },
+  "name": "Επιστήμη Δεδομένων: Βασικές Αρχές και Εφαρμογές με Python",
+  "ingredients": "2η έκδοση. Συγγραφέας/εις: Grus Joel",
+  "price": 29.7,
+  "imageUrl": "/assets/epistimi_upologistwn/5.jpg",
+  "meat": true,
+  "tag": "cs",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e26a50cb84c080a36fb0c2"
+  },
+  "name": "Υπολογιστική Γλωσσολογία (Ελληνικά - Γερμανικά)",
+  "ingredients": "Linguistik und ihre Anwendungen in der Computerlinguistik. Συγγραφέας/εις: Αλεξανδρή Χριστίνα",
+  "price": 22.5,
+  "imageUrl": "/assets/epistimi_upologistwn/6.jpg",
+  "meat": true,
+  "tag": "cs",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e26aa7cb84c080a36fb0c3"
+  },
+  "name": "Προγραμματισμός με τη C++",
+  "ingredients": "2η Έκδοση. Συγγραφέας/εις: Stroustrup Bjarne",
+  "price": 77.4,
+  "imageUrl": "/assets/epistimi_upologistwn/7.jpg",
+  "meat": true,
+  "tag": "cs",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e26afbcb84c080a36fb0c4"
+  },
+  "name": "Υπολογιστικά Μαθηματικά",
+  "ingredients": "Υπολογιστικές Μέθοδοι Αριθμητικής Ανάλυσης με χρήση Matlab. Συγγραφέας/εις: Γραββάνης Γεώργιος",
+  "price": 28.8,
+  "imageUrl": "/assets/epistimi_upologistwn/8.jpg",
+  "meat": true,
+  "tag": "cs",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e26b5acb84c080a36fb0c5"
+  },
+  "name": "Επιστημονικοί Υπολογισμοί",
+  "ingredients": "Υπολογιστικές Μέθοδοι και Μαθηματικό Λογισμικό με χρήση Matlab. Συγγραφέας/εις: Γραββάνης Γεώργιος",
+  "price": 27,
+  "imageUrl": "/assets/epistimi_upologistwn/9.jpg",
+  "meat": true,
+  "tag": "cs",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e26bd9cb84c080a36fb0c6"
+  },
+  "name": "Προγραμματισμός σε Σύγχρονα Υπολογιστικά Συστήματα",
+  "ingredients": "MPI, OPENMP, PTHREADS, CUDA. Συγγραφέας/εις: Γραββάνης Γεώργιος, Γιαννουτάκης Κωνσταντίνος, Παπαδοπουλος-Φιλελης Χρηστος",
+  "price": 26.1,
+  "imageUrl": "/assets/epistimi_upologistwn/10.jpg",
+  "meat": true,
+  "tag": "cs",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e26c4fcb84c080a36fb0c7"
+  },
+  "name": "Προγραμματισμός με τη Χρήση MΑΤLAB",
+  "ingredients": "Συγγραφέας/εις: Γραββάνης Γεώργιος, Γιαννουτάκης Κωνσταντίνος",
+  "price": 26.1,
+  "imageUrl": "/assets/epistimi_upologistwn/11.jpg",
+  "meat": true,
+  "tag": "cs",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e26c99cb84c080a36fb0c8"
+  },
+  "name": "Το Επίσημο Βιβλίο του Joomla! 1.6",
+  "ingredients": "Συγγραφέας/εις: Marriott Jennifer, Waring Elin",
+  "price": 20.7,
+  "imageUrl": "/assets/epistimi_upologistwn/12.jpg",
+  "meat": true,
+  "tag": "cs",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e26cf6cb84c080a36fb0c9"
+  },
+  "name": "Νευρωνικά Δίκτυα & Μηχανική Μάθηση",
+  "ingredients": "3η Έκδοση. Συγγραφέας/εις: Haykin Simon",
+  "price": 54,
+  "imageUrl": "/assets/epistimi_upologistwn/13.jpg",
+  "meat": true,
+  "tag": "cs",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e26d45cb84c080a36fb0ca"
+  },
+  "name": "Σύγχρονη Κρυπτογραφία: Θεωρία και Εφαρμογές",
+  "ingredients": "Συγγραφέας/εις: Burmester Mike, Γκρίτζαλης Στέφανος, Κάτσικας Σωκράτης, Χρυσικόπουλος Βασίλειος",
+  "price": 40.5,
+  "imageUrl": "/assets/epistimi_upologistwn/14.jpg",
+  "meat": true,
+  "tag": "cs",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e26d83cb84c080a36fb0cb"
+  },
+  "name": "Προστασία της Ιδιωτικότητας & Τεχνολογίες Πληροφορικής και Επικοινωνιών",
+  "ingredients": "Τεχνικά και Νομικά Θέματα. Συγγραφέας/εις: Λαμπρινουδάκης Κωνσταντίνος, Μήτρου Λίλιαν, Γκρίτζαλης Στέφανος, Κάτσικας Σωκράτης",
+  "price": 40.5,
+  "imageUrl": "/assets/epistimi_upologistwn/15.jpg",
+  "meat": true,
+  "tag": "cs",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e26fb9cb84c080a36fb0cd"
+  },
+  "name": "Μικροηλεκτρονικά Κυκλώματα",
+  "ingredients": "8η Έκδοση. Συγγραφέας/εις: Sedra Adel, Smith Keneth, Carusone Tony Chan, Gaudet Vincent",
+  "price": 81,
+  "imageUrl": "/assets/ilektroniki/16.jpg",
+  "meat": true,
+  "tag": "eeng, sales",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e2703fcb84c080a36fb0ce"
+  },
+  "name": "Σχεδίαση Κυκλωμάτων με τη VHDL",
+  "ingredients": "3η έκδοση. Συγγραφέας/εις: Volnei A. Pedroni",
+  "price": 40.5,
+  "imageUrl": "/assets/ilektroniki/17.jpg",
+  "meat": true,
+  "tag": "eeng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e27085cb84c080a36fb0cf"
+  },
+  "name": "Εργαστηριακές Ασκήσεις Βασικών Ηλεκτρονικών: Οδηγός από Μικροηλεκτρονικά Κυκλώματα",
+  "ingredients": "7η έκδοση των Sedra/Smith. Συγγραφέας/εις: Smith Keneth, Gaudet Vincent",
+  "price": 18,
+  "imageUrl": "/assets/ilektroniki/18.jpg",
+  "meat": true,
+  "tag": "eeng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e270dbcb84c080a36fb0d0"
+  },
+  "name": "Εισαγωγικό Εργαστήριο Κυκλωμάτων και Ηλεκτρονικής",
+  "ingredients": "Συγγραφέας/εις: Τσιβίδης Γιάννης",
+  "price": 22.5,
+  "imageUrl": "/assets/ilektroniki/19.jpg",
+  "meat": true,
+  "tag": "eeng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e2713acb84c080a36fb0d1"
+  },
+  "name": "Ψηφιακή Σχεδίαση, Με Εκτενή Παρουσίαση των Verilog, VHDL και SystemVerilog",
+  "ingredients": "6η Έκδοση. Συγγραφέας/εις: Morris Mano, Michael Ciletti",
+  "price": 49.5,
+  "imageUrl": "/assets/ilektroniki/20.jpg",
+  "meat": true,
+  "tag": "eeng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e27190cb84c080a36fb0d2"
+  },
+  "name": "Σχεδίαση Ολοκληρωμένων Κυκλωμάτων CMOS VLSI",
+  "ingredients": "4η Έκδοση. Συγγραφέας/εις: Weste Neil, Harris David",
+  "price": 49.5,
+  "imageUrl": "/assets/ilektroniki/21.jpg",
+  "meat": true,
+  "tag": "eeng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e2724dcb84c080a36fb0d3"
+  },
+  "name": "Βασικές Αρχές Μηχανών Εσωτερικής Καύσης",
+  "ingredients": "2η Έκδοση. Συγγραφέας/εις: Heywood Jon",
+  "price": 76.5,
+  "imageUrl": "/assets/mixanologia/37.jpg",
+  "meat": true,
+  "tag": "meng, sales",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e272decb84c080a36fb0d4"
+  },
+  "name": "Ανάλυση Μηχανολογικών Καταστροφών",
+  "ingredients": "Συγγραφέας/εις: Stein Kira",
+  "price": 25.2,
+  "imageUrl": "/assets/mixanologia/38.jpg",
+  "meat": true,
+  "tag": "meng, sales",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e27336cb84c080a36fb0d5"
+  },
+  "name": "Ανανεώσιμες Πηγές Ενέργειας: Τεχνολογίες & Περιβάλλον",
+  "ingredients": "Συγγραφέας/εις: Τσούτσος Θεοχάρης, Κανάκης Ιωάννης",
+  "price": 40.5,
+  "imageUrl": "/assets/mixanologia/39.jpg",
+  "meat": true,
+  "tag": "meng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e2738fcb84c080a36fb0d6"
+  },
+  "name": "Ειδικό Χωροταξικό για τις Ανανεώσιμες Πηγές Ενέργειας: ΕΝΑΣ ΧΡΟΝΟΣ ΜΕΤΑ",
+  "ingredients": "Συγγραφέας/εις: Μελισσάς Δημήτρης",
+  "price": 13.5,
+  "imageUrl": "/assets/mixanologia/40.jpg",
+  "meat": true,
+  "tag": "meng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e273f6cb84c080a36fb0d8"
+  },
+  "name": "Αντλία: Θεωρία - Εφαρμογές",
+  "ingredients": "Συγγραφέας/εις: Φελώνης Γεώργιος",
+  "price": 27,
+  "imageUrl": "/assets/mixanologia/41.jpg",
+  "meat": true,
+  "tag": "meng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e27471cb84c080a36fb0d9"
+  },
+  "name": "Μη Μεταλλικά Τεχνικά Υλικά",
+  "ingredients": "2η Έκδοση: Πολυμερή - Κεραμικά - Σύνθετα Υλικά - Ξύλο - Δομή - Ιδιότητες - Τεχνολογία - Εφαρμογές. Συγγραφέας/εις: Παντελής Δημήτριος",
+  "price": 20.66,
+  "imageUrl": "/assets/mixanologia/42.jpg",
+  "meat": true,
+  "tag": "meng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e274b8cb84c080a36fb0da"
+  },
+  "name": "Επιστήμη και Τεχνολογία των Μεταλλικών Υλικών",
+  "ingredients": "2η Αναθ. Έκδοση. Συγγραφέας/εις: Χρυσουλάκης Ιωάννης, Παντελής Δημήτριος",
+  "price": 36,
+  "imageUrl": "/assets/mixanologia/43.jpg",
+  "meat": true,
+  "tag": "meng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e274f1cb84c080a36fb0db"
+  },
+  "name": "Σύγχρονη Εργονομία",
+  "ingredients": "Συγγραφέας/εις: Λάιος Λάμπρος, Γιαννακούρου-Σιουτάρη Μαρία",
+  "price": 40.5,
+  "imageUrl": "/assets/mixanologia/44.jpg",
+  "meat": true,
+  "tag": "meng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e27523cb84c080a36fb0dc"
+  },
+  "name": "Πεπερασμένα Στοιχεία στη Μηχανολογία - Ασκήσεις",
+  "ingredients": "Συγγραφέας/εις: Κανάραχος Ανδρέας, Προβατίδης Χριστόφορος",
+  "price": 8.1,
+  "imageUrl": "/assets/mixanologia/45.jpg",
+  "meat": true,
+  "tag": "meng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e27573cb84c080a36fb0dd"
+  },
+  "name": "Σχεδιασμός χημικών βιομηχανιών: Θεωρία-Εφαρμογές",
+  "ingredients": "20 λυμένες ασκήσεις, 3 ολοκληρωμένες εφαρμογές, 6 προγράμματα εφαρμογής Η/Υ. Συγγραφέας/εις: Μαρίνος-Κουρής Δημήτριος, Μαρούλης Ζαχαρίας",
+  "price": 22.5,
+  "imageUrl": "/assets/mixanologia/46.jpg",
+  "meat": true,
+  "tag": "meng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e275a5cb84c080a36fb0de"
+  },
+  "name": "Δυναμική Μηχανών",
+  "ingredients": "Συγγραφέας/εις: Κανάραχος Ανδρέας, Αντωνιάδης Ιωάννης",
+  "price": 24.3,
+  "imageUrl": "/assets/mixanologia/47.jpg",
+  "meat": true,
+  "tag": "meng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e27e21cb84c080a36fb0df"
+  },
+  "name": "Ασύρματες Επικοινωνίες",
+  "ingredients": "3η Έκδοση. Συγγραφέας/εις: Κανάτας Αθανάσιος, Πάντος Γεώργιος",
+  "price": 54,
+  "imageUrl": "/assets/tilepikinonies/22.jpg",
+  "meat": true,
+  "tag": "teng, sales",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e27e78cb84c080a36fb0e0"
+  },
+  "name": "Ψηφιακές Επικοινωνίες",
+  "ingredients": "3η Έκδοση: Θεωρία και Εφαρμογές. Συγγραφέας/εις: Sklar Bernard",
+  "price": 52.2,
+  "imageUrl": "/assets/tilepikinonies/23.jpg",
+  "meat": true,
+  "tag": "teng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e27ecdcb84c080a36fb0e1"
+  },
+  "name": "Θεωρία Κεραιών: Ανάλυση και σχεδίαση",
+  "ingredients": "4η έκδοση. Συγγραφέας/εις: Μπαλάνης Κωνσταντίνος",
+  "price": 85.5,
+  "imageUrl": "/assets/tilepikinonies/24.jpg",
+  "meat": true,
+  "tag": "teng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e27f12cb84c080a36fb0e2"
+  },
+  "name": "Εισαγωγή στην Υδροακουστική & στην Τεχνολογία Sonar",
+  "ingredients": "Συγγραφέας/εις: Σάγος Γεώργιος",
+  "price": 44.1,
+  "imageUrl": "/assets/tilepikinonies/25.jpg",
+  "meat": true,
+  "tag": "teng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e27f4ccb84c080a36fb0e3"
+  },
+  "name": "Συστήματα Ραντάρ και Ηλεκτρονικού Πολέμου",
+  "ingredients": "Συγγραφέας/εις: Σάγος Γεώργιος",
+  "price": 44.1,
+  "imageUrl": "/assets/tilepikinonies/26.jpg",
+  "meat": true,
+  "tag": "teng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e27f7dcb84c080a36fb0e4"
+  },
+  "name": "Ψηφιακά Συστήματα Επικοινωνιών: Μια Σύγχρονη Προσέγγιση",
+  "ingredients": "Συγγραφέας/εις: Haykin Simon",
+  "price": 45,
+  "imageUrl": "/assets/tilepikinonies/27.jpg",
+  "meat": true,
+  "tag": "teng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e27fb5cb84c080a36fb0e5"
+  },
+  "name": "Συστήματα Κινητών Επικοινωνιών",
+  "ingredients": "2η Έκδοση. Συγγραφέας/εις: Κωνσταντίνου Φίλιππος, Κανάτας Αθανάσιος, Πάντος Γεώργιος",
+  "price": 49.5,
+  "imageUrl": "/assets/tilepikinonies/28.jpg",
+  "meat": true,
+  "tag": "teng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e2806ecb84c080a36fb0e7"
+  },
+  "name": "Βασικές Αρχές Σημάτων και Συστημάτων",
+  "ingredients": "Συγγραφέας/εις: Καραγιάννης Γεώργιος, Μαραγκός Πέτρος",
+  "price": 30.15,
+  "imageUrl": "/assets/tilepikinonies/29.jpg",
+  "meat": true,
+  "tag": "teng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e280aecb84c080a36fb0e8"
+  },
+  "name": "Συστήματα Επικοινωνίας",
+  "ingredients": "5η Έκδοση. Συγγραφέας/εις: Haykin Simon, Moher Michael",
+  "price": 33.75,
+  "imageUrl": "/assets/tilepikinonies/30.jpg",
+  "meat": true,
+  "tag": "teng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e28128cb84c080a36fb0e9"
+  },
+  "name": "Δορυφορικές Επικοινωνίες",
+  "ingredients": "2η Αμερικανική Έκδοση. Συγγραφέας/εις: Pratt T., Βοstian C., Allnutt J.",
+  "price": 36.72,
+  "imageUrl": "/assets/tilepikinonies/31.jpg",
+  "meat": true,
+  "tag": "teng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e2816dcb84c080a36fb0ea"
+  },
+  "name": "Ασφάλεια Ασύρματων & Κινητών Δικτύων Επικοινωνιών",
+  "ingredients": "Ασφάλεια σε αυτόνομα και ετερογενή περιβάλλοντα Bluetooth, IEEE 802.11, 802.16, UMTS. Συγγραφέας/εις: Καμπουράκης Γεώργιος, Γκρίτζαλης Στέφανος, Κάτσικας Σωκράτης",
+  "price": 28.62,
+  "imageUrl": "/assets/tilepikinonies/32.jpg",
+  "meat": true,
+  "tag": "teng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e281f9cb84c080a36fb0eb"
+  },
+  "name": "Δίκτυα Επικοινωνιών",
+  "ingredients": "Συγγραφέας/εις: Walrand Jean",
+  "price": 27,
+  "imageUrl": "/assets/tilepikinonies/33.jpg",
+  "meat": true,
+  "tag": "teng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e28230cb84c080a36fb0ec"
+  },
+  "name": "Εισαγωγή στις Τηλεπικοινωνίες",
+  "ingredients": "Συγγραφέας/εις: Κωνσταντίνου Φίλιππος, Καψάλης Χρήστος, Κώττης Π.",
+  "price": 11.52,
+  "imageUrl": "/assets/tilepikinonies/34.jpg",
+  "meat": true,
+  "tag": "teng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e2825ecb84c080a36fb0ed"
+  },
+  "name": "Εισαγωγή στα Μικροκύματα",
+  "ingredients": "Συγγραφέας/εις: Ουζούνογλου Νικόλαος",
+  "price": 22.5,
+  "imageUrl": "/assets/tilepikinonies/35.jpg",
+  "meat": true,
+  "tag": "teng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68e28290cb84c080a36fb0ee"
+  },
+  "name": "Δίκτυα Οπτικών Ινών",
+  "ingredients": "Συγγραφέας/εις: Green Paul",
+  "price": 27,
+  "imageUrl": "/assets/tilepikinonies/36.jpg",
+  "meat": true,
+  "tag": "teng",
+  "createdAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-29T11:06:53.190Z"
+  }
+}]
